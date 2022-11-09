@@ -1,3 +1,7 @@
+:root {
+    --primary-color: slategrey;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@
 
 body {
     font-family: "popins";
-    background-color: rgb(222, 225, 225);
+    background-color: rgba(246, 243, 243, 0.846);
 }
 
 header {
@@ -26,7 +30,7 @@ header {
     padding: 10px 10%;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,23 +61,169 @@ nav ul li {
 nav ul li a {
     color: lavender;
     font-size: 17px;
+    padding: 10px 10px;
+
 }
-nav ul li a i{
+
+nav ul li a i {
     margin: 0 3px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: rgb(50, 50, 50);
     color: white;
-    padding: 10px 10px;
 }
-.imp-inf span{
+
+.imp-inf span {
+    z-index: 2;
+    position: absolute;
     background-color: #f77902;
     padding: 9px 10px;
     color: #fff;
     text-transform: uppercase;
 }
-.slide{
+
+.slide {
+    position: relative;
+    overflow: hidden;
     margin: 0 10px;
-    border: 0.01dmm ridge black;
+    /* border: 0.01mm ridge black; */
+}
+
+.slide marquee {
+    overflow: hidden;
+    padding: 9px 10px;
+    background-color: #fff;
+}
+/* .slide .p-animate{
+    animation: 5s linear slidein;
+}
+@keyframes slidein {
+    0%{margin-left: 100%;
+        width: 300%;}
+    20%{margin-left: 80%;
+        width: 300%;}
+    40%{margin-left: 60%;
+        width: 300%;}
+    60%{margin-left: 40%;
+        width: 200%;}
+    80%{margin-left: 20%;
+        width: 150%;}
+    100%{margin-left: 0%;
+        width: 100%;}
+} */
+
+.carousel-container {
+    /* border-radius: 30px; */
+    overflow: hidden;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 0 30px -20px #223344;
+    margin: auto;
+    z-index: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    display: block;
+    width: 100%;
+}
+
+image gradient overlay [optional]
+.mySlides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(-45deg, rgba(110, 0, 255, .1), rgba(70, 0, 255, .2));
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background: rgba(173, 216, 230, 0.1);
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    background-color: rgba(10, 10, 20, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.number {
+    color: #f2f2f2;
+    font-size: 16px;
+    background-color: rgba(173, 216, 230, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* The dots/bullets/indicators */
+
+/* .active,
+.dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+} */
+
+/* transition animation */
+.animate {
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1.1) rotateY(10deg);
+    }
+
+    to {
+        transform: scale(1) rotateY(0deg);
+    }
 }
