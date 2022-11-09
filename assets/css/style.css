@@ -84,17 +84,29 @@ nav ul li a:hover {
 }
 
 .slide {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     margin: 0 10px;
     /* border: 0.01mm ridge black; */
 }
 
 .slide marquee {
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 9px 10px;
     background-color: #fff;
 }
+
+.col-60{
+    display: inline-block;
+    margin: 20px 0;
+    width: 60%;
+}
+.col-40{
+    display: block;
+    margin: 20px 0;
+    width: 40%;
+}
+
 /* .slide .p-animate{
     animation: 5s linear slidein;
 }
@@ -196,12 +208,7 @@ image gradient overlay [optional]
     left: 10px;
 }
 
-.dots-container {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%);
-}
+
 
 /* The dots/bullets/indicators */
 
