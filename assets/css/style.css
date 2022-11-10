@@ -59,6 +59,7 @@ nav ul li {
 }
 
 nav ul li a {
+    cursor:zoom-in ;
     color: lavender;
     font-size: 17px;
     padding: 10px 10px;
@@ -133,6 +134,7 @@ nav ul li a:hover {
     box-shadow: 0 0 30px -20px #223344;
     margin: auto;
     z-index: 0;
+    
 }
 
 /* Hide the images by default */
