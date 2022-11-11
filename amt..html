@@ -6,24 +6,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <style>
         :root {
             --primary-color: slategrey;
         }
 
         * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: "@Microsoft YaHei Light";
-            background: #fafafa;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
-            /* height: 100vh; */
-            overflow: hidden;
+        @font-face {
+            font-family: "popins";
+            src: url(../fonts/Poppins-Regular.ttf);
         }
+
+        body {
+            font-family: "popins";
+            background-color: rgba(246, 243, 243, 0.846);
+        }
+
+        header {
+            width: 100%;
+            height: 550px;
+            background-image: url("assets/imgs/heder-bg.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            padding: 10px 10%;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 240px;
+        }
+
+        nav ul {
+            background-color: #f77902;
+            border-radius: 7px;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            /* margin: 10px 15px; */
+            padding: 10px 15px;
+        }
+
+        nav ul li a {
+            cursor: zoom-in;
+            color: lavender;
+            font-size: 17px;
+            padding: 10px 10px;
+
+        }
+
+        nav ul li a i {
+            margin: 0 3px;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(50, 50, 50);
+            color: white;
+        }
+
+        .imp-inf span {
+            z-index: 2;
+            position: absolute;
+            background-color: #f77902;
+            padding: 9px 10px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .slide {
+            /* position: relative; */
+            overflow: hidden;
+            margin: 0 10px;
+            /* border: 0.01mm ridge black; */
+        }
+
+        .slide marquee {
+            /* overflow: hidden; */
+            padding: 9px 10px;
+            background-color: #fff;
+        }
+
+        .col-60 {
+            display: block;
+            padding: 20px 0px;
+            width: 66%;
+        }
+
+        .col-40 {
+            display: block;
+            padding: 20px 20px;
+            width: 33%;
+        }
+
+        .col-33 {
+            margin-right: auto;
+            /* margin: 10px 8px; */
+            width: 32%;
+        }
+
+        /* .slide .p-animate{
+    animation: 5s linear slidein;
+}
+@keyframes slidein {
+    0%{margin-left: 100%;
+        width: 300%;}
+    20%{margin-left: 80%;
+        width: 300%;}
+    40%{margin-left: 60%;
+        width: 300%;}
+    60%{margin-left: 40%;
+        width: 200%;}
+    80%{margin-left: 20%;
+        width: 150%;}
+    100%{margin-left: 0%;
+        width: 100%;}
+} */
 
         .carousel-container {
             /* border-radius: 30px; */
@@ -33,6 +156,7 @@
             box-shadow: 0 0 30px -20px #223344;
             margin: auto;
             z-index: 0;
+
         }
 
         /* Hide the images by default */
@@ -45,8 +169,7 @@
             width: 100%;
         }
 
-        image gradient overlay [optional]
-        .mySlides::after {
+        image gradient overlay [optional] .mySlides::after {
             content: "";
             position: absolute;
             inset: 0;
@@ -108,19 +231,14 @@
             left: 10px;
         }
 
-        .dots-container {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translate(-50%);
-        }
+
 
         /* The dots/bullets/indicators */
 
         /* .active,
-        .dots:hover {
-            background-color: rgba(173, 216, 230, 0.8);
-        } */
+.dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+} */
 
         /* transition animation */
         .animate {
@@ -139,61 +257,339 @@
                 transform: scale(1) rotateY(0deg);
             }
         }
+
+
+        /* sec-2 start */
+        .sec-2 .contentbox {
+            height: 400px;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 10px 10px;
+            border-width: 1px 1px 6px;
+            border-color: #dbe1e4;
+            border-style: solid;
+            margin-bottom: 20px;
+        }
+
+        .sec-2 .heading {
+            /* padding: 10px 9px; */
+            display: inline-block;
+            padding: 10px;
+            background-color: #f77902;
+            color: #fff;
+            text-transform: uppercase;
+            /* width: 120px; */
+        }
+
+        .sec-2 .text-2 {
+            margin: 20px 0;
+        }
+
+        .sec-2 .text-2 img {
+            padding: 20px 20px;
+            width: 100%;
+        }
+
+        .text-2 marquee {
+            height: 260px;
+        }
+
+        .text-2 marquee p {
+            padding: 16px 15px;
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        .text-2 p {
+            font-size: 14px;
+        }
+
+        #slider {
+            z-index: 1000;
+        }
+
+        .swiper {
+            width: 80%;
+            height: fit-content;
+        }
+
+        .swiper-slide {
+            display: flex;
+        }
+
+        .slider-card img {
+            width: 100%;
+        }
+
+        .swiper-slide img {
+            margin-right: 20px;
+            /* justify-content: space-between; */
+            width: 300px;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Full-width images with number and caption text -->
-    <div class="carousel-container">
-        <div class="mySlides animate">
-            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt="slide" />
-            <div class="number">1 / 5</div>
-            <div class="text">Lorem ipsum dolor sit amet consectetur</div>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="assets/imgs/logo.png" class="logo" alt="">
+                <ul>
+                    <li><a href=""> <i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href=""> <i class="fa-solid fa-people-group"></i> Passenger Information</a></li>
+                    <li><a href=""> <i class="fa-solid fa-handshake"></i> About us</a></li>
+                    <li><a href=""> <i class="fa-solid fa-phone"></i> Contact us</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <section class="sec-1">
+        <div class="container">
+            <div class="imp-inf">
+                <span>
+                    important information :
+                </span>
+            </div>
+            <div class="slide">
+                <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+                    amet quidem quia repellat sunt quae perferendis, quis id sequi corporis nam, dolor ipsa incidunt
+                    impedit, totam fugit veritatis esse reprehenderit? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Veritatis fugit provident sint, magni minima
+                    quisquam illo maxime sit deserunt. Reprehenderit iste magni sit repellat sed sunt at
+                    consequatur ea consectetur!
+                </marquee>
+                <!-- <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, doloribus nostrum voluptates aperiam nihil quo quaerat cum officiis omnis optio amet maxime iusto voluptatem recusandae, sit adipisci ea! Reiciendis, laboriosam!</marquee> -->
+            </div>
+            <div class="row">
+                <div class="col-60">
+                    <div class="carousel-container">
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg"
+                                alt="slide" />
+                            <div class="number">1 / 10</div>
+                            <div class="text">APPAREL PARK DEPOT</div>
+                        </div>
 
-        <div class="mySlides animate">
-            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt="slide" />
-            <div class="number">2 / 5</div>
-            <div class="text">amet consectetur</div>
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/DOORDARSHAN-KENDRA-STATION-ps9r6lwevar6plxexsmbmndh9u1tnyarj1250ikxw4.jpg"
+                                alt="slide" />
+                            <div class="number">2 / 10</div>
+                            <div class="text">DOORDARSHAN KENDRA STATION</div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/GANDHIGRAM-STATION-ps9r8m9zhji9jl0a75wlgn3z0i534na3gzaiytlml0.jpg"
+                                alt="slide" />
+                            <div class="number">3 / 10</div>
+                            <div class="text">GANDHIGRAM STATION</div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/HELMET-CROSS-ROADS-ps9racbc0lv6tui64wpz17ge7xnb8o4dpickn31n6c.jpg"
+                                alt="slide" />
+                            <div class="number">4 / 10</div>
+                            <div class="text">HELMENT CROSS ROAD </div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/PSD-AT-UG-STATION-ps9rc641b0d9ejulgp5uvqunswn07hdlak0k8gc32s.jpg"
+                                alt="slide" />
+                            <div class="number">5 / 10</div>
+                            <div class="text">PSD AT UG STATION</div>
+                        </div>
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/SABARMATI-RIVER-BRIDGE-ps9rewt38m4d9lv8gdtonjy26d4jnp9eo4ijmi9qxg.jpg"
+                                alt="slide" />
+                            <div class="number">6 / 10</div>
+                            <div class="text">SABARMATI RIVER SIDE BRIDGE</div>
+                        </div>
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/STABLING-LINES-APPAREL-PARK-DEPOT-ps9ri2jk7kg2afa108zjj98u1zjyj2sxfrgaozl40k.jpg"
+                                alt="slide" />
+                            <div class="number">7 / 10</div>
+                            <div class="text">STABLING LINES APPAREL PARK DEPOT</div>
+                        </div>
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/THALTEJ-STATION-ps9rkhyjv5rqa5r1tsruh56patl3exfyrs4gbpzhxw.jpg"
+                                alt="slide" />
+                            <div class="number">8 / 10</div>
+                            <div class="text">THALTEJ STATION</div>
+                        </div>
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/TUNNEL-KANKARIA-EAST-TO-SHAHPUR-2-ps9ro9bb7ax0q0afvfa4g712ub1y7cdbae2dfket1w.jpg"
+                                alt="slide" />
+                            <div class="number">9 / 10</div>
+                            <div class="text">TUNEL TUNNEL-KANKARIA-EAST-TO-SHAHPUR</div>
+                        </div>
+                        <div class="mySlides animate">
+                            <img src="assets/imgs/TUNNEL.-ps9rm3apg1y7ydfrizk378ptjbqhggrlbnx2llmhec.jpg" alt="slide" />
+                            <div class="number">10 / 10</div>
+                            <div class="text">TUNNEL</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <!-- <div class="dots-container">
+                            <span class="dots" onclick="currentSlide(1)"></span>
+                            <span class="dots" onclick="currentSlide(2)"></span>
+                            <span class="dots" onclick="currentSlide(3)"></span>
+                            <span class="dots" onclick="currentSlide(4)"></span>
+                            <span class="dots" onclick="currentSlide(5)"></span>
+                            <span class="dots" onclick="currentSlide(6)"></span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-40">
+                    <div class="carousel-container">
+                        <div class="mySlides animates">
+                            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg"
+                                alt="slide" />
+                            <div class="number">1 / 5</div>
+                            <div class="text">APPAREL PARK DEPOT</div>
+                        </div>
+
+                        <div class="mySlides animates">
+                            <img src="assets/imgs/DOORDARSHAN-KENDRA-STATION-ps9r6lwevar6plxexsmbmndh9u1tnyarj1250ikxw4.jpg"
+                                alt="slide" />
+                            <div class="number">2 / 5</div>
+                            <div class="text">DOORDARSHAN KENDRA STATION</div>
+                        </div>
+
+                        <div class="mySlides animates">
+                            <img src="assets/imgs/GANDHIGRAM-STATION-ps9r8m9zhji9jl0a75wlgn3z0i534na3gzaiytlml0.jpg"
+                                alt="slide" />
+                            <div class="number">3 / 5</div>
+                            <div class="text">GANDHIGRAM STATION</div>
+                        </div>
+
+                        <div class="mySlides animates">
+                            <img src="assets/imgs/HELMET-CROSS-ROADS-ps9racbc0lv6tui64wpz17ge7xnb8o4dpickn31n6c.jpg"
+                                alt="slide" />
+                            <div class="number">4 / 5</div>
+                            <div class="text">HELMENT CROSS ROAD </div>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="prevSlides()">&#10094;</a>
+                        <a class="next" onclick="nextSlides()">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <!-- <div class="dots-container">
+                            <span class="dots" onclick="currentSlide(1)"></span>
+                            <span class="dots" onclick="currentSlide(2)"></span>
+                            <span class="dots" onclick="currentSlide(3)"></span>
+                            <span class="dots" onclick="currentSlide(4)"></span>
+                            <span class="dots" onclick="currentSlide(5)"></span>
+                            <span class="dots" onclick="currentSlide(6)"></span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="mySlides animate">
-            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt="slide" />
-            <div class="number">3 / 5</div>
-            <div class="text">Lorem ipsum dolor sit</div>
+    </section>
+    <section class="sec-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-33">
+                    <div class="contentbox">
+                        <div class="heading">
+                            <p>route map</p>
+                        </div>
+                        <div class="text-2">
+                            <a href="#"><img src="assets/imgs/sec-2-map.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="contentbox">
+                        <div class="heading">
+                            <p>news & events</p>
+                        </div>
+                        <div class="text-2">
+                            <marquee behavior="60%" direction="up">
+                                <p> "MEGA has achieved an important milestone by signing a General Engineering
+                                    Consultancy
+                                    (GEC) contract with SYSTRA S.A. led consortium for Ahmedabad Metro Rail Project
+                                    Phase-I.
+                                    The contract signing ceremony was held in the MEGA office at Gandhinagar and the
+                                    contract was signed & exchanged between Shri I P Gautam, Managing Director of MEGA
+                                    Co.
+                                    Ltd. and Shri Hari Somalraju, representative from SYSTRA, the lead member of
+                                    consortium.
+                                    This consortium also includes RITES Limited from India, Oriental Consultants Global
+                                    Company Limited from Japan and AECOM Asia Company Limited from Hong Kong as members
+                                    of
+                                    the consortium."</p><br>
+                                <p> "MEGA has achieved an important milestone by signing a General Engineering
+                                    Consultancy
+                                    (GEC) contract with SYSTRA S.A. led consortium for Ahmedabad Metro Rail Project
+                                    Phase-I.
+                                    The contract signing ceremony was held in the MEGA office at Gandhinagar and the
+                                    contract was signed & exchanged between Shri I P Gautam, Managing Director of MEGA
+                                    Co.
+                                    Ltd. and Shri Hari Somalraju, representative from SYSTRA, the lead member of
+                                    consortium.
+                                    This consortium also includes RITES Limited from India, Oriental Consultants Global
+                                    Company Limited from Japan and AECOM Asia Company Limited from Hong Kong as members
+                                    of
+                                    the consortium."</p>
+                            </marquee>
+                            <!-- <marquee behavior="60%" direction="up" height="200px">"MEGA has achieved an important milestone by signing a General Engineering Consultancy
+                                (GEC) contract with SYSTRA S.A. led consortium for Ahmedabad Metro Rail Project Phase-I.
+                                The contract signing ceremony was held in the MEGA office at Gandhinagar and the
+                                contract was signed & exchanged between Shri I P Gautam, Managing Director of MEGA Co.
+                                Ltd. and Shri Hari Somalraju, representative from SYSTRA, the lead member of consortium.
+                                This consortium also includes RITES Limited from India, Oriental Consultants Global
+                                Company Limited from Japan and AECOM Asia Company Limited from Hong Kong as members of
+                                the consortium."</marquee> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="contentbox">
+                        <div class="heading">
+                            <p>citizen corner</p>
+                        </div>
+                        <div class="text-2">
+                            <p> We are interested to find out how people want to stay in touch with the project.If you
+                                have
+                                any comments, feedback or questions, please</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+    <section id="slider">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                    <a href=""><img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt=""></a>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-        <div class="mySlides animate">
-            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt="slide" />
-            <div class="number">4 / 5</div>
-            <div class="text">Doloribus quo alias reprehenderit</div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
-
-        <div class="mySlides animate">
-            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt="slide" />
-            <div class="number">5 / 5</div>
-            <div class="text">Reprehenderit</div>
-        </div>
-        <div class="mySlides animate">
-            <img src="assets/imgs/APPAREL-PARK-DEPOT-ps9r1vrmiaaac6sjj92ulcb1r3cdyqjcjmz95fl76c.jpg" alt="slide" />
-            <div class="number">6 / 5</div>
-            <div class="text">ahmedabad</div>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="prevSlide()">&#10094;</a>
-        <a class="next" onclick="nextSlide()">&#10095;</a>
-
-        <!-- The dots/circles -->
-        <!-- <div class="dots-container">
-            <span class="dots" onclick="currentSlide(1)"></span>
-            <span class="dots" onclick="currentSlide(2)"></span>
-            <span class="dots" onclick="currentSlide(3)"></span>
-            <span class="dots" onclick="currentSlide(4)"></span>
-            <span class="dots" onclick="currentSlide(5)"></span>
-            <span class="dots" onclick="currentSlide(6)"></span>
-        </div> -->
-    </div>
+    </section>
     <script>
         let slideIndex = 0;
         showSlides();
@@ -253,6 +649,27 @@
                 timer = _timer; // reset timer
             }
         }, 1000); // 1sec
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+
+        });
     </script>
 </body>
 
