@@ -284,3 +284,33 @@ image gradient overlay [optional] .mySlides::after {
 .text-2 p{
     font-size: 14px;
 }
+
+
+/* bottom slider start  */
+#slider {
+    background-color: #fff;
+    z-index: 1000;
+    /* height: fit-content; */
+    /* width: ; */
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.slider-card img {
+    margin-right: 10px;
+    width: 100%;
+}
+
+.swiper-slide img {
+    padding: 0 20px;
+    margin:0 30px;
+    /* justify-content: space-between; */
+    width: 240px;
+}
