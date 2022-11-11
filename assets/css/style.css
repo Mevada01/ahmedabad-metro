@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -110,6 +111,7 @@ nav ul li a:hover {
 }
 
 .col-33 {
+    padding: 0 15px;
     margin-right: auto;
     /* margin: 10px 8px; */
     width: 32%;
@@ -314,3 +316,48 @@ image gradient overlay [optional] .mySlides::after {
     /* justify-content: space-between; */
     width: 240px;
 }
+/* bootom slider end */
+/* sec-2 end  */
+
+
+
+
+/* footer start */
+
+footer{
+    background-color: #424141;
+}
+.footer-links  {
+    padding: 40px 0;
+}
+.footer-links h3{
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.footer-links li a{
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 0;
+}
+.footer-links p{
+    display: inline-block;
+    width: 82%;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0;
+}
+.reg-office i{
+    vertical-align: middle;
+    margin: 0 10px 10px 0;
+    color: #fff;
+    opacity: 0.7;
+}
+.reg-office li{
+    margin: 10px 0;
+}
+/* footer end  */
