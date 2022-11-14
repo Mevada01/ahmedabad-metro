@@ -1,0 +1,122 @@
+:root {
+    --primary-color: slategrey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "popins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: "popins";
+    background-color: rgba(246, 243, 243, 0.846);
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background-image: url(../imgs/psg-info-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 50px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 240px;
+}
+
+nav ul {
+    background-color: #f77902;
+    border-radius: 7px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /* margin: 10px 15px; */
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    color: lavender;
+    font-size: 17px;
+    padding: 10px 10px;
+}
+
+nav ul li a i {
+    margin: 0 3px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.rtat {
+    transition: all .6s;
+}
+
+.psg-info :hover .rtat {
+    /* transform-origin: 0 0; */
+    transform: rotate(90deg);
+    /* transform: scale(2) */
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+    /* display: flex;
+    flex-direction: column; */
+    top: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-nav {
+    display: none;
+}
+
+nav .psg-info:hover .dropdown-nav {
+    display: block;
+    background-color: #fff;
+    color: black;
+}
+
+.dropdown-nav a {
+    color: black;
+}
+
+.dropdown-nav a:hover {
+    color: #f77902;
+    background-color: #fff;
+}
