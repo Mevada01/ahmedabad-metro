@@ -15,6 +15,15 @@
     src: url(../fonts/Poppins-Regular.ttf);
 }
 
+::-webkit-scrollbar-thumb {
+    background: #f77902;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
 body {
     font-family: "popins";
     background-color: rgba(246, 243, 243, 0.846);
@@ -64,9 +73,10 @@ nav ul li {
     /* margin: 10px 15px; */
     padding: 10px 15px;
 }
+
 nav ol li {
     list-style: none;
-    display:block;
+    display: block;
     /* margin: 10px 15px; */
     padding: 10px 15px;
 }
@@ -103,7 +113,7 @@ nav ul li a:hover {
 
 .pos-ab {
     position: absolute;
-    top:60px;
+    top: 60px;
     /* left: 100X; */
     right: 40px;
     /* z-index: 999; */
@@ -115,7 +125,7 @@ nav ul li a:hover {
 }
 
 nav .drp-info:hover .dropdown-nav {
-    display:  block;
+    display: block;
     background-color: #fff;
     color: black;
     /* float: left; */
@@ -127,15 +137,18 @@ nav .drp-info:hover .dropdown-nav {
     font-size: 14px;
     color: black;
 }
+
 .abt span {
     font-size: 14px;
     color: black !important;
 }
-.abt span:hover{
+
+.abt span:hover {
     transition: all .6s;
     color: #f77902 !important;
     background-color: #fff;
 }
+
 .abt i {
     font-size: 14px;
     color: black !important;
@@ -148,21 +161,24 @@ nav .drp-info:hover .dropdown-nav {
     background-color: #fff;
 }
 
-.abt{
+.abt {
     text-align: left;
     align-items: flex-start;
-    padding:10px 20px;
+    padding: 10px 20px;
 }
+
 .abt ul {
     margin: 0;
     padding: 0;
     background-color: #fff;
 }
+
 .abt ul li a {
     margin: 0;
     padding: 0;
     background-color: #fff;
 }
+
 .abt-txt p {
     letter-spacing: 0.095rem;
     font-weight: 600;
@@ -170,15 +186,18 @@ nav .drp-info:hover .dropdown-nav {
     padding: 8px 0;
     border-bottom: 1px solid #dcdcdc;
 }
-.caption img{
+
+.caption img {
     width: 100%;
 }
-.caption p{
+
+.caption p {
     margin: 20px 0;
     padding: 0 10px;
     font-size: 12px;
     color: #353434;
 }
+
 /* nav .psg-info:hover .dropdown-nav li{
 
     display: inline-block;
@@ -210,9 +229,11 @@ nav .drp-info:hover .dropdown-nav {
     padding: 20px 0px;
     width: 66%;
 }
-.col-25{
+
+.col-25 {
     width: 25%;
 }
+
 .col-40 {
     display: block;
     padding: 20px 20px;
