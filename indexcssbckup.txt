@@ -215,3 +215,693 @@ nav .drp-info:hover .dropdown-nav {
     /* margin: 10px 8px; */
     width: 32%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+        <div class="container pos-rel">
+            <nav>
+                <img src="assets/imgs/logo.png" class="logo" alt="">
+                <ul>
+                    <li><a href="#"> <i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="drp-info"><a class="li-a" href="psg-info.html"> <i class="fa-solid fa-people-group"></i>
+                            Passenger Information
+                            <i class="fa-solid fa-chevron-right rtat"></i></a>
+                        <ol class="dropdown-nav pos-ab ">
+                            <p>Passenger Information</p>
+                            <li><a href="psg-info.html"> > Time Table</a></li>
+                            <li><a href="psg-info.html"> > Map Route & Fares</a></li>
+                            <li><a href="psg-info.html"> > Customer Care</a></li>
+                            <li><a href="psg-info.html"> > Fare Rules</a></li>
+                        </ol>
+                    </li>
+                    <li class=" drp-info "><a class="li-a" href="about.html"> <i class="fa-solid fa-handshake"></i>
+                            About us <i class="fa-solid fa-chevron-right rtat"></i></a>
+                        <div class="containt dropdown-nav pos-ab">
+                            <div class="row ">
+                                <div class="col-25 abt">
+                                    <div class="abt-intro">
+                                        <div class="abt-txt">
+                                            <p>Introduction</p>
+                                            <ul>
+                                                <li><a href=""> > Vision & Mission</a></li>
+                                                <li><a href=""> > Constitution</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-25 abt">
+                                    <div class="abt-intro">
+                                        <div class="abt-txt">
+                                            <p>Organization Structure</p>
+                                            <ul>
+                                                <li><a href=""> > Present Board of Directors</a></li>
+                                                <li><a href=""> > Board Level Committees</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-25 abt">
+                                    <div class="abt-intro">
+                                        <div class="abt-txt">
+                                            <p>Reports</p>
+                                            <ul>
+                                                <li><a href=""> > View All Reports</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-25 abt">
+                                    <div class="abt-intro">
+                                        <div class="caption">
+                                            <img src="assets/imgs/Mega-menu-all-images.jpg" alt="">
+                                            <p>To provide safe, fast and eco-friendly rail based mass
+                                                transit services to the public at affordable rates while simultaneously
+                                                catalysing dense and orderly urban growth</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="drp-info"><a href="" class="li-a"> <i class="fa-solid fa-phone"></i> Contact us
+                            <i class="fa-solid fa-chevron-right rtat"></i></a>
+                        <div class="dropdown-nav  pos-ab ">
+                            <div class="abt">
+                                <p>Registered Offfice</p>
+                                <ul class="reg-office">
+                                    <li><a href="">
+                                            <i class="fa-solid fa-location-dot mb"></i>
+                                            <span>Block No.1, First Floor, Karmayogi Bhavan, Sector 10/A,
+                                                Gandhinagar-382010.</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="tel:+91-79-23248572"> <i class="fa-solid fa-phone rgi"></i>
+                                            +91-79-23248572</a>
+                                    </li>
+                                    <li><a href="mailto:info@gujaratmetrorail.com"><i
+                                                class="fa-solid fa-envelope rgi"></i>info@gujaratmetrorail.com </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="log-sign.html"><i class="fa-solid fa-user-plus"></i> Login<i
+                                class="fa-solid fa-chevron-right rtat"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    :root {
+    --primary-color: slategrey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "popins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f77902;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+body {
+    font-family: "popins";
+    background-color: rgba(246, 243, 243, 0.846);
+}
+
+header {
+    width: 100%;
+    height: 550px;
+    background-image: url(../imgs/heder-bg.jpg);
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 50px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 240px;
+}
+
+nav ul {
+    background-color: #f77902;
+    border-radius: 7px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /* margin: 10px 15px; */
+    padding: 10px 15px;
+}
+
+nav ol li {
+    list-style: none;
+    display: block;
+    /* margin: 10px 15px; */
+    padding: 10px 15px;
+}
+
+nav ul li a {
+    color: lavender;
+    font-size: 17px;
+    padding: 10px 10px;
+}
+
+nav ul li a i {
+    margin: 0 3px;
+}
+
+nav ul li a:hover {
+    transition: all .6s;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.rtat {
+    transition: all .6s;
+}
+
+.li-a:hover .rtat {
+    /* transform-origin: 0 0; */
+    transform: rotate(90deg);
+    /* transform: scale(2) */
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-ab {
+    position: absolute;
+    top: 60px;
+    /* left: 100X; */
+    right: 40px;
+    /* z-index: 999; */
+    /* float: left; */
+}
+
+.dropdown-nav {
+    display: none;
+}
+
+nav .drp-info:hover .dropdown-nav {
+    display: block;
+    background-color: #fff;
+    color: black;
+    /* float: left; */
+    width: 80%;
+    padding: 10px 10px;
+}
+
+.dropdown-nav a {
+    font-size: 14px;
+    color: black;
+}
+
+.abt span {
+    font-size: 14px;
+    color: black !important;
+}
+
+.abt span:hover {
+    transition: all .6s;
+    color: #f77902 !important;
+    background-color: #fff;
+}
+
+.abt i {
+    font-size: 14px;
+    color: black !important;
+}
+
+.dropdown-nav a:hover {
+    font-size: 15px;
+    transition: all .6s;
+    color: #f77902;
+    background-color: #fff;
+}
+
+.abt {
+    text-align: left;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.abt ul {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.abt ul li a {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.abt-txt p {
+    letter-spacing: 0.095rem;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.caption img {
+    width: 100%;
+}
+
+.caption p {
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #353434;
+}
+
+/* nav .psg-info:hover .dropdown-nav li{
+
+    display: inline-block;
+} */
+.imp-inf span {
+    z-index: 2;
+    position: absolute;
+    background-color: #f77902;
+    padding: 9px 10px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slide {
+    /* position: relative; */
+    overflow: hidden;
+    margin: 0 10px;
+    /* border: 0.01mm ridge black; */
+}
+
+.slide marquee {
+    /* overflow: hidden; */
+    padding: 9px 10px;
+    background-color: #fff;
+}
+
+.col-60 {
+    display: block;
+    padding: 20px 0px;
+    width: 66%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-40 {
+    display: block;
+    padding: 20px 20px;
+    width: 33%;
+}
+
+.col-33 {
+    padding: 0 15px;
+    margin-right: auto;
+    /* margin: 10px 8px; */
+    width: 32%;
+}
+
+/* .slide .p-animate{
+    animation: 5s linear slidein;
+}
+@keyframes slidein {
+    0%{margin-left: 100%;
+        width: 300%;}
+    20%{margin-left: 80%;
+        width: 300%;}
+    40%{margin-left: 60%;
+        width: 300%;}
+    60%{margin-left: 40%;
+        width: 200%;}
+    80%{margin-left: 20%;
+        width: 150%;}
+    100%{margin-left: 0%;
+        width: 100%;}
+} */
+
+.carousel-container {
+    /* border-radius: 30px; */
+    overflow: hidden;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 0 30px -20px #223344;
+    margin: auto;
+    z-index: 0;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    display: block;
+    width: 100%;
+}
+
+image gradient overlay [optional] .mySlides::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(-45deg, rgba(110, 0, 255, .1), rgba(70, 0, 255, .2));
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background: rgba(173, 216, 230, 0.1);
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    background-color: rgba(10, 10, 20, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.number {
+    color: #f2f2f2;
+    font-size: 16px;
+    background-color: rgba(173, 216, 230, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+/* The dots/bullets/indicators */
+
+/* .active,
+.dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+} */
+
+/* transition animation */
+.animate {
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1.1) rotateY(10deg);
+    }
+
+    to {
+        transform: scale(1) rotateY(0deg);
+    }
+}
+
+
+/* sec-2 start */
+.sec-2 .contentbox {
+    height: 400px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-width: 1px 1px 6px;
+    border-color: #dbe1e4;
+    border-style: solid;
+    margin-bottom: 20px;
+}
+
+.sec-2 .heading {
+    /* padding: 10px 9px; */
+    display: inline-block;
+    padding: 10px;
+    background-color: #f77902;
+    color: #fff;
+    text-transform: uppercase;
+    /* width: 120px; */
+}
+
+.sec-2 .text-2 {
+    margin: 20px 0;
+}
+
+.sec-2 .text-2 img {
+    padding: 20px 20px;
+    width: 100%;
+}
+
+.text-2 marquee {
+    height: 260px;
+}
+
+.text-2 marquee p {
+    padding: 16px 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.text-2 p {
+    font-size: 14px;
+}
+
+
+/* bottom slider start  */
+#slider {
+    background-color: #fff;
+    z-index: 1000;
+    /* height: fit-content; */
+    /* width: ; */
+}
+
+.swiper {
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.slider-card img {
+    margin-right: 10px;
+    width: 100%;
+}
+
+.swiper-slide img {
+    padding: 0 20px;
+    margin: 0 30px;
+    /* justify-content: space-between; */
+    width: 240px;
+}
+
+/* bootom slider end */
+/* sec-2 end  */
+
+
+
+
+/* footer start */
+
+footer {
+    background-color: #424141;
+}
+
+.footer-links {
+    padding: 40px 0;
+}
+
+.footer-links h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.footer-links li a {
+    /* display: flex; */
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+
+.footer-links ul li a:hover {
+    opacity: 0.7;
+    color: #f77902;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.footer-links p:hover {
+    color: #f77902;
+}
+
+.footer-links ul li i:hover {
+    color: #f77902;
+}
+
+.footer-links p {
+    display: inline-block;
+    width: 82%;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* .reg-office,
+.menu-links,
+.cnt-info {
+    padding: 20px 0;
+} */
+
+.mb {
+    vertical-align: middle;
+    margin: 0 10px 10px 0;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.rgi {
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.reg-office span {
+    display: inline-block;
+    width: 82%;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.reg-office span:hover {
+    color: #f77902;
+}
+
+.reg-office li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    width: 100%;
+    background: #353434;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.copyright a {
+    color: #f77902;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+
+/* footer end  */
