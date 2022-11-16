@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Navbar Animation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
@@ -49,7 +55,7 @@
             color: #fff;
         }
 
-        .logo img{
+        .logo img {
             /* font-size: 1.1rem;
             font-weight: 600;
             text-transform: uppercase;
@@ -57,7 +63,8 @@
             line-height: 4rem; */
             width: 200px;
         }
-/* 
+
+        /* 
         .logo span {
             font-weight: 300;
         } */
@@ -214,6 +221,7 @@
 
         .links a:hover {
             color: #fff;
+            border-bottom: 1px solid #353434 ;
         }
 
         .lg.active .links a {
@@ -319,7 +327,8 @@
         <div class="navbar">
             <div class="menu">
                 <div class="logo">
-                <img src="assets/imgs/logo.png" alt=""></div>
+                    <img src="assets/imgs/logo.png" alt="">
+                </div>
                 <div class="hamburger-menu">
                     <div class="bar"></div>
                 </div>
@@ -341,7 +350,7 @@
                     </div>
                 </header>
             </div>
-<!-- 
+            <!-- 
             <div class="shadow one"></div>
             <div class="shadow two"></div> -->
         </div>
@@ -349,10 +358,10 @@
         <div class="links">
             <ul>
                 <li>
-                    <a href="#" style="--i: 0.05s;">Home</a>
+                    <a href="#" style="--i: 0.05s;"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#" style="--i: 0.1s;">Services</a>
+                    <a href="#" style="--i: 0.1s;"><i class="fa-solid fa-house"></i>Services</a>
                 </li>
                 <li>
                     <a href="#" style="--i: 0.15s;">Portfolio</a>
@@ -361,7 +370,7 @@
                     <a href="#" style="--i: 0.2s;">Testimonials</a>
                 </li>
                 <li>
-                    <a href="#" style="--i: 0.25s;">About</a>
+                    <a href="#" style="--i:  0.25s;">About</a>
                 </li>
                 <li>
                     <a href="#" style="--i: 0.3s;">Contact</a>
@@ -369,7 +378,6 @@
             </ul>
         </div>
     </div>
-    
 
     <script>
         const hamburger_menu = document.querySelector(".hamburger-menu");
