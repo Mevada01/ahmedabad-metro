@@ -14,9 +14,11 @@
     font-family: "popins";
     src: url(../fonts/Poppins-Regular.ttf);
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /* ::-webkit-scrollbar-thumb {
     background: #f77902;
     border-radius: 10px;
@@ -45,6 +47,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* 
 .col-25 {
     width: 25%;
@@ -156,7 +159,7 @@ body {
 header {
     min-height: 100vh;
     width: 100%;
-    /* background: linear-gradient(135deg, #48546160 0%, #28313b78 74%); */
+    background: linear-gradient(135deg, #48546160 0%, #28313b78 74%);
     /* background: url("assets/imgs/heder-bg.jpg") no-repeat top center / cover; */
     position: relative;
 }
@@ -182,18 +185,45 @@ header {
 
 .title {
     font-size: 2.7rem;
+    margin: 10px 0;
+    transition: all .5s;
+}
+
+.title:hover {
+    color: #f77802ab;
+    /* color: linear-gradient(135deg, #48546160 0%, #28313b78 74%); */
+}
+
+.inner p {
+    font-size: 17px;
+    margin: 10px 0;
+    transition: all .5s;
+    /* line-height: 27px; */
+    /* word-spacing: 7px; */
+}
+
+.inner p:hover {
+    color: #f77802;
 }
 
 .btn {
-    margin-top: 1rem;
+    margin: 20px 0;
+    transition: all .5s;
+    /* margin-top: 1rem; */
     padding: 0.6rem 1.8rem;
-    background-color: #1179e7;
     border: none;
     border-radius: 25px;
-    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: none;
+    background-color: #fff;
+    color: #f77802;
+}
+
+.btn:hover {
+    /* background-color: #fff; */
+    background-color: #f77902;
+    color: #fff
 }
 
 .lg.active .bar {
@@ -374,17 +404,22 @@ ul {
     100%{margin-left: 0%;
         width: 100%;}
 } */
+.sec-1 {
+    background-color: #3c4c5d;
+    /* background-image: linear-gradient(135deg, #485461 0%, #28313bd1 74%); */
+}
 
 .carousel-container {
     /* border-radius: 30px; */
     overflow: hidden;
     max-width: 800px;
     position: relative;
-    box-shadow: 0 0 30px -20px #223344;
+    box-shadow: 0 0 30px -20px #34495e;
     margin: auto;
     z-index: 0;
 
 }
+
 .imp-inf span {
     z-index: 2;
     position: absolute;
