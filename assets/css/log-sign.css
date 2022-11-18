@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     height: 100%;
     overflow: hidden;
     width: 100% !important;
@@ -110,22 +111,22 @@ input {
     width: 50%;
     height: 100%;
     overflow: scroll;
-    background: #f9f9f9;
+    background-image: linear-gradient(135deg, #485461 0%, #28313bd1 74%), url(../imgs/heder-bg.jpg); 
     right: 0;
     position: absolute;
 }
 
 .right label {
-    color: #212121;
+    color: #FFF7;
 }
 
 .right input {
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid #fff7;
 }
 
 .right input:focus,
 .right input:active {
-    border-color: #673AB7;
+    border-color: #fff;
 }
 
 .right input:-webkit-autofill {
@@ -154,7 +155,7 @@ input {
 }
 
 .right .content h2 {
-    color: #673AB7;
+    color: #FFF7;
 }
 
 .form-element {
@@ -197,7 +198,7 @@ input {
 
 .checkbox:checked:after {
     outline: none;
-    content: "✓";
+    /* content: "✓"; */
     color: #03A9F4;
     font-size: 1.4em;
     font-weight: 900;
@@ -248,11 +249,11 @@ button.off {
 }
 
 button.off.signup {
-    color: #03A9F4;
+    color: #fff7;
 }
 
 button.off.login {
-    color: #673AB7;
+    color: #fff7;
 }
 
 button:focus,
