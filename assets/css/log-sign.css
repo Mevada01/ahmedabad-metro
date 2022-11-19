@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -78,8 +82,11 @@ input {
     width: 50%;
     height: 100%;
     overflow: scroll;
-    background: #2C3034;
+    /* background: #2C3034; */
+    background-image: linear-gradient(135deg, #485461 0%, #28313bd1 74%), url(../imgs/sign-hd-up.jpg);
     left: 0;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
     position: absolute;
 }
 
@@ -111,8 +118,10 @@ input {
     width: 50%;
     height: 100%;
     overflow: scroll;
-    background-image: linear-gradient(135deg, #485461 0%, #28313bd1 74%), url(../imgs/heder-bg.jpg); 
+    background-image: linear-gradient(135deg, #485461 0%, #28313bd1 74%), url(../imgs/login-hd-up.jpg);
     right: 0;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
     position: absolute;
 }
 
@@ -249,11 +258,11 @@ button.off {
 }
 
 button.off.signup {
-    color: #fff7;
+    color: #fff;
 }
 
 button.off.login {
-    color: #fff7;
+    color: #fff;
 }
 
 button:focus,
@@ -284,7 +293,7 @@ button:focus.off.signup,
 button:active.off.signup,
 button:hover.off.signup {
     color: #03A9F4;
-    background: #212121;
+    background: #fff;
 }
 
 button:focus.off.login,
