@@ -503,7 +503,26 @@ td {
     color: rgb(43, 51, 59);
 }
 
+.content-area .dos-donts {
+    background-color: #f77802e1;
+}
 
+.content-area .dos-donts h3 {
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.909);
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .dos-donts ul {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.909);
+    padding: 20px;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .dos-donts ul li {
+    margin: 10px 10px;
+}
 
 
 
@@ -533,7 +552,7 @@ td {
 }
 
 .tab-contents ul li {
-    list-style: none;
+    /* list-style: none; */
     margin: 10px 0;
 }
 
