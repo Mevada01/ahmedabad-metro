@@ -1,7 +1,10 @@
 :root {
     --primary-color: slategrey;
 }
-
+::selection{
+    background-color: #f77802;
+    color: #fff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -417,7 +420,8 @@ ul {
     background-color: #f77902;
 }
 
-.menu-psg ul li a{
+
+.menu-psg ul li span{
     color: #fff;
     padding: 8px 22px;
     border-bottom: 1px solid #dbd6d6;
@@ -432,13 +436,66 @@ ul {
 }
 
 .menu-rgt-h3 h3{
+    /* margin: 20px 20px; */
+    border-bottom:1px solid #dbd6d6 ;
     color: #f77802;
     padding: 10px 0;
     font-weight: 500;
 }   
-table{
+table {
+    margin: 20px 20px;
     border: 1px solid black;
 }
 table tr td{
-    padding: 10px 6px;
+    /* padding: 10px 10px; */
+}
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+
+
+
+.tab-links {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    /* background: #ff004f; */
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
 }
