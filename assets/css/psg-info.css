@@ -391,6 +391,8 @@ ul {
     transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
 
+
+/* ------- sec-1 start ---------- */
 .psg-info-tf{
     padding: 10px 10px;
 }
@@ -421,4 +423,22 @@ ul {
     border-bottom: 1px solid #dbd6d6;
     width: 100%;
     display: inline-block;
+}
+
+.menu-right{
+    padding: 0px 10px ;
+    margin: 12px 0;
+    background-color: #fff;
+}
+
+.menu-rgt-h3 h3{
+    color: #f77802;
+    padding: 10px 0;
+    font-weight: 500;
+}   
+table{
+    border: 1px solid black;
+}
+table tr td{
+    padding: 10px 6px;
 }

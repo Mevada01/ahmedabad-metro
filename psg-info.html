@@ -55,7 +55,7 @@
         <div class="links">
             <ul>
                 <li>
-                    <a href="#" style="--i: 0.05s;"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="index.html" style="--i: 0.05s;"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
                 <li>
                     <a href="psg-info.html" style="--i: 0.1s;"> <i class="fa-solid fa-people-group"></i>
@@ -80,53 +80,80 @@
             </ul>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-25 psg-info-tf">
-                <h3>Passenger-Information</h3>
-                <div class="menu-psg">
-                    <ul class="menu-psg-ul">
-                        <li>
-                            <a href="#">Time Table</a>
-                        </li>
-                        <li>
-                            <a href="#">Information of Entry-Exit Gate At Entrance</a>
-                        </li>
-                        <li>
-                            <a href="#">Customer care</a>
-                        </li>
-                        <li>
-                            <a href="#">Do's and Don'ts</a>
-                        </li>
-                        <li>
-                            <a href="#">Smart Cards </a>
-                        </li>
-                        <li>
-                            <a href="#">Fare Rules </a>
-                        </li>
-                        <li>
-                            <a href="#">Safety & Security </a>
-                        </li>
-                        <li>
-                            <a href="#">Facilities For Passenger </a>
-                        </li>
-                        <li>
-                            <a href="#">Facilities For Differently Abled Passenger </a>
-                        </li>
-                        <li>
-                            <a href="#">Lost & Found </a>
-                        </li>
-                        <li>
-                            <a href="#">Emergency Contact </a>
-                        </li>
-                    </ul>
+    <section id="sec-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-25 psg-info-tf">
+                    <h3>Passenger-Information</h3>
+                    <div class="menu-psg">
+                        <ul class="menu-psg-ul">
+                            <li class="tab-links active-link " onclick="opentab('time-table')">
+                                <a href="#">Time Table</a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('info-eeg')">
+                                <a href="#">Information of Entry-Exit Gate At Entrance</a>
+                            </li >
+                            <li class="tab-links " onclick="opentab('customer-care')">
+                                <a href="#">Customer care</a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('dos-dont')">
+                                <a href="#">Do's and Don'ts</a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('smart-card')">
+                                <a href="#">Smart Cards </a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('fare-rule')">
+                                <a href="#">Fare Rules </a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('safe-security')">
+                                <a href="#">Safety & Security </a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('facility-psg')">
+                                <a href="#">Facilities For Passenger </a>
+                            </li>
+                            <li class="tab-links " onclick="opentab('facility-diff-psg')">
+                                <a href="#">Facilities For Differently Abled Passenger </a>
+                            </li>
+                            <li>
+                                <a href="#">Lost & Found </a>
+                            </li>
+                            <li>
+                                <a href="#">Emergency Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-75">
+                    <div class="menu-right">
+                        <div class="menu-tm-tb" id="menu-tm-tb">
+                            <div class="menu-rgt-h3">
+                                <h3>Time Table</h3>
+                            </div>
+                            <table border="1px">
+                                <tr>
+                                    <td>some data</td>
+                                    <td>some data</td>
+                                    <td>some data</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="menu-info-eeg " id="menu-info-eeg">
+                            <div class="menu-rgt-h3">
+                                <h3>Information of Entry-Exit Gate At Entrance</h3>
+                            </div>
+                            <table border="1px">
+                                <tr>
+                                    <td>some data</td>
+                                    <td>some data some data</td>
+                                    <td>some data</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-75">
-
-            </div>
         </div>
-    </div>
+    </section>
     <script>
         const hamburger_menu = document.querySelector(".hamburger-menu");
         const container = document.querySelector(".lg");
