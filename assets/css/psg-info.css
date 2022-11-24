@@ -7,6 +7,11 @@
     color: #fff;
 }
 
+.bg-clr ::selection {
+    background-color: #fff;
+    color: #f77802;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -433,9 +438,9 @@ ul {
 
 
 .menu-psg ul li span {
+    padding: 8px 22px;
     transition: all .5s;
     color: #fff;
-    padding: 8px 22px;
     border-bottom: 1px solid #dbd6d6;
     width: 100%;
     display: inline-block;
@@ -456,9 +461,10 @@ ul {
     font-weight: 500;
 }
 
-table {
+table,
+th {
     background-color: #f77802b1;
-    /* margin: 20px 20px; */
+    margin: 20px 20px;
     border: 1px solid black;
 }
 
@@ -475,12 +481,13 @@ td {
     border-collapse: collapse;
 }
 
-.content-area {
-    padding: 20px;
+thead th {
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.909);
 }
 
-.content-area .cust-care {
-    background-color: #f77802e1;
+.content-area {
+    padding: 20px;
 }
 
 .content-area .cust-care p {
@@ -503,10 +510,6 @@ td {
     color: rgb(43, 51, 59);
 }
 
-.content-area .dos-donts {
-    background-color: #f77802e1;
-}
-
 .content-area .dos-donts h3 {
     padding: 10px 10px;
     color: rgba(255, 255, 255, 0.909);
@@ -523,6 +526,119 @@ td {
 .content-area .dos-donts ul li {
     margin: 10px 10px;
 }
+
+.content-area .bg-clr {
+    background-color: #f77802e1;
+}
+
+.content-area .smart-cards h3 {
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.909);
+    font-weight: 500;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .smart-cards ul {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.909);
+    padding: 20px;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .smart-cards ul li {
+    margin: 10px 10px;
+}
+
+.content-area marquee p {
+    margin: 20px 0;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+    color: #f77802;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: -1;
+    }
+}
+
+.content-area .fare-rules ul {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.909);
+    padding: 20px;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .fare-rules ul li {
+    margin: 10px 10px;
+}
+
+.content-area .fare-rules ul li ol {
+    margin: 10px 30px;
+}
+
+.content-area .safe-secure ul {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.909);
+    padding: 20px;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .safe-secure thead tr th {
+    color: rgba(255, 255, 255, 0.909);
+    padding: 15px;
+}
+
+.content-area .safe-secure tbody tr td {
+    padding: 10px 30px !important;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    font-size: 1.000em;
+    line-height: 1.313em;
+    margin: 0;
+}
+
+.table img {
+    height: 120px;
+    width: 200px;
+    /* padding: 10px 0px; */
+}
+
+.content-area .lnf h3 {
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.909);
+    border-bottom: 1px solid #dbd6d6;
+    font-weight: 500;
+}
+.content-area address{
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143;
+    color: rgba(255, 255, 255, 0.909);
+}
+.content-area .lnf a{
+    color: #646464;
+}
+
+.content-area .lnf ul {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.909);
+    padding: 20px;
+    border-bottom: 1px solid #dbd6d6;
+}
+
+.content-area .lnf ul li {
+    margin: 10px 10px;
+}
+
+
 
 
 

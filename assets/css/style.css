@@ -1,7 +1,10 @@
 :root {
     --primary-color: slategrey;
 }
-
+::selection{
+    background-color: #f77802;
+    color: #fff;
+}
 * {
     margin: 0;
     padding: 0;

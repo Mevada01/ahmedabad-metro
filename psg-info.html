@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script>
 </head>
 
-<body oncontextmenu="return false">
+<body oncontextmenu="return false" onload="loadweb()">
     <div class="containeer lg">
         <div class="navbar">
             <div class="menu">
@@ -41,7 +41,7 @@
                                 also ensures that its commuters get a world class experience, so as to “Have a Nice
                                 Day!”
                             </p> -->
-                            <img src="assets/imgs/psg-fare-rout.jpeg" alt="">
+                            <img src="assets/imgs/iPad mini 8.3 - 1.png" alt="">
                             <a href="#sec-1"><button class="btn"> Read more</button></a>
                         </div>
                     </div>
@@ -113,10 +113,10 @@
                             </li>
                             <li class="tab-links " onclick="opentab('facility-diff-psg')">
                                 <span> Facilities For Differently Abled Passenger </span>
-                            <li class="tab-links " onclick="opentab('facility-diff-psg')">
+                            <li class="tab-links " onclick="opentab('lost-found')">
                                 <span> Lost & Found </span>
                             </li>
-                            <li class="tab-links " onclick="opentab('facility-diff-psg')">
+                            <li class="tab-links " onclick="opentab('emg-cnt')">
                                 <span> Emergency Contact </span>
                             </li>
                         </ul>
@@ -129,7 +129,7 @@
                                 <h3>Time Table</h3>
                             </div>
                             <div class="content-area">
-                                <table>
+                                <table class="bg-clr">
                                     <tr>
                                         <td> some data</td>
                                         <td>some data</td>
@@ -142,8 +142,8 @@
                             <div class="menu-rgt-h3">
                                 <h3>Information of Entry-Exit Gate At Entrance</h3>
                             </div>
-                            <div class="content-area">
-                                <table cellspacing="0" border="0">
+                            <div class="content-area ">
+                                <table cellspacing="0" border="0" class="bg-clr">
                                     <colgroup width="80"></colgroup>
                                     <colgroup span="2" width="152"></colgroup>
                                     <colgroup width="153"></colgroup>
@@ -1038,7 +1038,7 @@
                                 <h3>Customer Care</h3>
                             </div>
                             <div class="content-area">
-                                <div class="cust-care">
+                                <div class="cust-care bg-clr">
                                     <p>
                                         GMRC is working hard to meet expectations of Passengers and committed to give
                                         delightful experience to passengers.
@@ -1064,7 +1064,7 @@
                                 <h3>Do's & Don't</h3>
                             </div>
                             <div class="content-area">
-                                <div class="dos-donts">
+                                <div class="dos-donts bg-clr">
                                     <h3>Do's</h3>
                                     <p></p>
                                     <ul>
@@ -1131,10 +1131,456 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="menu-smart-card tab-contents" id="smart-card">
+                            <div class="menu-rgt-h3">
+                                <h3>Smart Cards</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="smart-cards bg-clr">
+                                    <h3>Purchase/Recharge of Samrt Card</h3>
+                                    <ul>
+                                        <li>Passenger can purchase Smart card at any operational stations by Payment of
+                                            Rs. 100/- (Rs. 50/- as Security Deposit and Rs. 50/- as Stored Value)
+                                            through Cash or POS (Debit/Credit Card). Stored Value Can be used for
+                                            travelling in Ahmedabad Metro as per fare chart.</li>
+                                        <li>Passenger can recharge CSC in multiple of Rs. 50/- up to maximum of Rs.
+                                            3000/-</li>
+                                        <li>Passenger can recharge CSC using Token Vending Machine (TVM) and Recharge
+                                            Card Machine (RCM) at Operational Station. </li>
+                                        <li>CSC valid for 5 Years from date of Last Recharge.</li>
+                                    </ul>
+                                    <h3>Use of Smart Card</h3>
+                                    <!-- <br> -->
+                                    <ul>
+                                        <li><strong>Entry-Exit:</strong> Tap Smart Card at Entry Fare Gate to Enter into
+                                            paid area and at Exit Fare Gate to Exit from paid area.</li>
+                                        <li><strong>Sequence:</strong> Each Entry shall be followed by Exit while using
+                                            CSC.</li>
+                                        <li><strong>Mismatch:</strong> If Entry-Exit sequence does not follow. There
+                                            will be Entry-Exit Mismatch Error in CSC. Passenger shall contact Customer
+                                            Care at station to eliminate error.</li>
+                                        <li><strong>Requirement of Minimum Stored Value:</strong> Minimum Stored value
+                                            required to enter is minimum fare of system.</li>
+                                        <li><strong>Fare Deduction:</strong> Fare will be deducted at Exit Fare Gates as
+                                            per journey performed. In case of Entry &amp; Exit at same station, Minimum
+                                            Fare of system will be deducted. </li>
+                                        <li><strong>Facilities to check Stored Value:</strong> Passenger can check
+                                            Stored Value through Recharge Card Machine (RCM) and ENQ Machine.</li>
+                                    </ul>
+                                </div>
+                                <marquee class="blink">
+                                    <p> ** Note: ENQ Machine is currently not available. It will be operational soon. **
+                                    </p>
+                                </marquee>
+                                <div class="smart-cards bg-clr">
+                                    <h3>Benefits of Smart Card</h3>
+                                    <ul>
+                                        <li><strong>Save Money!</strong><br>
+                                            Passengers using CSC for travelling will be given 10% discount on completion
+                                            of journey.</li>
+                                        <li><strong>Save Time!</strong><br>
+                                            No need to stand in queue to purchase Token. </li>
+                                        <li><strong>Enjoy Convenience!</strong><br>
+                                            You can catch train at last moment. (Token Vending Counters will be closed
+                                            five minutes before departure of last scheduled train.)</li>
+                                        <li><strong>Great Flexibility!</strong><br>
+                                            Smart card can be used by Friends, Family or relatives as per flexibility.
+                                        </li>
+                                        <li><strong>Freedom!</strong><br>
+                                            Journey can be Extended/Terminated without pre-planning as Fare will be
+                                            deducted at Exit Fare Gates.</li>
+                                    </ul>
+                                    <h3>Refund of Smart Card</h3>
+                                    <!-- <br> -->
+                                    <ul>
+                                        <li>Stored Value amount of CSC will not be refunded in Cash. </li>
+                                        <li>In case of Unreadable CSC, refund of Stored Value will be provided in new
+                                            CSC as per Business Rules of GMRC.</li>
+                                        <li>If passenger wants to refund Readable CSC, only Security Deposit will be
+                                            refunded after deducting admin charges as per Business Rules of GMRC.</li>
+                                        <li>Process for Refund of Stored value of Unreadable CSC in new CSC will take up
+                                            to 7 days.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-fare-rule tab-contents" id="fare-rule">
+                            <div class="menu-rgt-h3">
+                                <h3>Fare Rule</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="fare-rules bg-clr">
+                                    <ul>
+                                        <li>Following are the Fare Media allowed for Travelling within GMRC Network
+                                            <ol>
+                                                <li> Contactless Smart Token (CST)</li>
+                                                <li> Contactless Smart Card (CSC)</li>
+                                                <li> Temporary Paper Ticket (It will be used in case of Failure of AFC
+                                                    System)</li>
+                                            </ol>
+                                        </li>
+                                        <li>Following are Fare Products available for Travelling within GMRC Network
+                                            <ol>
+                                                <li> Single Journey Token (SJT)</li>
+                                                <li> Group Ticket (For Group of Passengers more than 10)</li>
+                                                <li> Tourist Ticket</li>
+                                            </ol>
+                                        </li>
+                                        <li>Children only under 3 feet (90cms) height are allowed to travel free if
+                                            accompanied<br>
+                                            by an adult.</li>
+                                        <li>Token purchased will be valid for use on business day of Purchase. Business
+                                            Day will<br>
+                                            be considered as per implemented Timetable for Revenue Services.</li>
+                                        <li>Passengers can purchase Fare Media/Products by payment through cash or
+                                            POS<br>
+                                            (Debit/Credit Card).</li>
+                                        <li><strong>Refund of Token:</strong>Only unused CST (not used for entry) can be
+                                            refunded within 30<br>
+                                            minutes from time of issue from issuing station.</li>
+                                        <li><strong>Maximum permissible Time:</strong>20 minutes in case of Exit from
+                                            Same Station and 120<br>
+                                            Minutes in case of Exit from other Station.</li>
+                                        <li><strong>Luggage Limit:</strong>Passenger is allowed to carry luggage of
+                                            Weight 25 Kg and<br>
+                                            Dimension of 80 cm x 50 cm x 30 cm (Length x Breadth x Height). Luggage of
+                                            Size<br>
+                                            and/or weight more than this limit will not be allowed.</li>
+                                        <li><strong>Penalty:</strong>
+                                            <ol>
+                                                <li> Penalty of Rs. 200/- will be levied if person is caught trying to
+                                                    carrying away<br>
+                                                    token outside premise of GMRC.</li>
+                                                <li> Penalty of Rs. 10/- per hour per person subject to maximum of Rs.
+                                                    50/- per<br>
+                                                    person for staying in paid area for time more than Maximum
+                                                    permissible time.</li>
+                                                <li> If passenger is found without valid Ticket in paid area, Passenger
+                                                    is liable to<br>
+                                                    pay Penalty of Rs. 50/- plus Maximum fare of the system</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-safe-secure tab-contents" id="safe-security">
+                            <div class="menu-rgt-h3">
+                                <h3>Safety & Security</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="safe-secure bg-clr">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">FACILITIES FOR EMERGENCY</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Emergency Stop Plunger</td>
+                                                <td>It is provided at platforms to stop trains approaching stations.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emergency Trip System</td>
+                                                <td>It is provided at Platforms to cut off 750 V Power supply during
+                                                    emergency.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fire Alarm &amp; suppression System</td>
+                                                <td>Fire Alarm &amp; Suppression system is available to detect and deal
+                                                    with Fire.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fire Extinguisher</td>
+                                                <td>Portable Fire Extinguishers are available at Stations &amp; inside
+                                                    trains to handle small fire.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fire Hose Cabinet</td>
+                                                <td>Fire Hose cabinet is available at stations to handle big fires.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emergency Detrainment Ramp</td>
+                                                <td>It is available in trains to evacuate passengers safely during
+                                                    emergency.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emergency Exit Signage</td>
+                                                <td>Lit Signage are provided to guide passengers towards exit during
+                                                    emergency.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Emergency Evacuation Map</td>
+                                                <td>Evacuation Route map is provided at prominent location at stations.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Stretcher</td>
+                                                <td>Stretcher is available at stations for emergency rescue of
+                                                    passengers.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Passenger Emergency Alarm &amp; Passenger Helpline</td>
+                                                <td>Passenger Emergency Alarm is provided in trains &amp; Passenger
+                                                    helpline is provided at stations for passengers to communicate with
+                                                    officials during emergency.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-faci-pag tab-contents" id="facility-psg">
+                            <div class="menu-rgt-h3">
+                                <h3>Facilities for Passenger</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="faci-psg bg-clr">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">FACILITIES FOR PASSENGERS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img class="alignnone size-full wp-image-6358"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_43_49_468Z.png"
+                                                        alt="image_2021_06_10T09_43_49_468Z"></td>
+                                                <td>Contactless Smart Card</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="alignnone size-full wp-image-6359"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_44_54_940Z.png"
+                                                        alt="image_2021_06_10T09_44_54_940Z"></td>
+                                                <td>Token Vending &amp; Card Recharge Machines</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="alignnone size-thumbnail wp-image-6360"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_45_44_117Z-150x150.png"
+                                                        alt="image_2021_06_10T09_45_44_117Z"></td>
+                                                <td>Drinking Water</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="alignnone size-thumbnail wp-image-6361"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_46_40_660Z-150x150.png"
+                                                        alt="image_2021_06_10T09_46_40_660Z"></td>
+                                                <td>First Aid Assistance</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img class="alignnone size-full wp-image-6362"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_47_56_394Z.png"
+                                                        alt="image_2021_06_10T09_47_56_394Z"></td>
+                                                <td>Passenger Seating Chair</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Passenger-Information-Display-1-150x150.jpg"
+                                                        alt="Passenger Information Display"
+                                                        class="alignnone size-thumbnail wp-image-6384"></td>
+                                                <td>Passenger Information Display</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Guiding-Signage-150x150.jpg"
+                                                        alt="Guiding Signage"
+                                                        class="alignnone size-thumbnail wp-image-6386"></td>
+                                                <td>Guiding Signage</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Lifts-150x150.jpg"
+                                                        alt="Lifts" class="alignnone size-thumbnail wp-image-6388"></td>
+                                                <td>Lifts</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Escalator-150x150.jpg"
+                                                        alt="Escalator" class="alignnone size-thumbnail wp-image-6389">
+                                                </td>
+                                                <td>Escalator</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Restrooms-150x150.jpg"
+                                                        alt="Restrooms" class="alignnone size-thumbnail wp-image-6390">
+                                                </td>
+                                                <td>Restrooms</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-faci-pag tab-contents" id="facility-diff-psg">
+                            <div class="menu-rgt-h3">
+                                <h3>Facilities for Passenger</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="faci-psg bg-clr">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">FACILITIES FOR DIFFERENTLY ABLED</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/fact1-150x150.jpg"
+                                                        alt="fact1" class="alignnone size-thumbnail wp-image-6347"></td>
+                                                <td>Wide Automatic Fare Gates</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_30_52_639Z.png"
+                                                        alt="image_2021_06_10T09_30_52_639Z"
+                                                        class="alignnone size-full wp-image-6348"></td>
+                                                <td>Tactile Path for Visually Impaired</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_32_12_962Z.png"
+                                                        alt="image_2021_06_10T09_32_12_962Z"
+                                                        class="alignnone size-full wp-image-6349"></td>
+                                                <td>Passenger Ramp</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_33_32_070Z.png"
+                                                        alt="image_2021_06_10T09_33_32_070Z"
+                                                        class="alignnone size-full wp-image-6350"></td>
+                                                <td>Availability of Wheelchair at Station</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_34_38_191Z.png"
+                                                        alt="image_2021_06_10T09_34_38_191Z"
+                                                        class="alignnone size-full wp-image-6351"></td>
+                                                <td>Reserved Space for Wheelchair in Train</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_34_38_191.png"
+                                                        alt="image_2021_06_10T09_34_38_191"
+                                                        class="alignnone size-full wp-image-6352"></td>
+                                                <td>Braille Call Buttons &amp; Handrails in Lifts</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_37_12_636Z.png"
+                                                        alt="image_2021_06_10T09_37_12_636Z"
+                                                        class="alignnone size-full wp-image-6353"></td>
+                                                <td>Ticket Counter at Low Height</td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/image_2021_06_10T09_37_12_636-150x150.png"
+                                                        alt="image_2021_06_10T09_37_12_636"
+                                                        class="alignnone size-thumbnail wp-image-6354"></td>
+                                                <td>Restrooms for Differently abled passengers</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-faci-pag tab-contents" id="lost-found">
+                            <div class="menu-rgt-h3">
+                                <h3>Lost And found</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="lnf bg-clr">
+                                    <h3>For Lost and Found Query Please contact:-</h3>
+                                    <address>Lost & Found office <br>
+                                        Apparel Park Depot,<br>
+                                        Land line - <a href="tel:+91-79-23248572">
+                                            079-22960123</a> <br>
+                                        Office timing -10:30 A.M. to 06:10 P.M. <br>
+                                        Email: <a href="mailto:care@gujaratmetrorail.com">care@gujaratmetrorail.com
+                                        </a>
+                                    </address>
+                                    <h3>Important Information</h3>
+                                    <ul style="margin-top: 15px;">
+                                        <li>Passengers, who has lost an article in GMRCL premises or in trains, can
+                                            report at any station, or directly mail/call at Customer Care giving all
+                                            details about the articles mentioning his/her address and contact numbers.
+                                        </li>
+                                        <li>All perishable food items and soiled items will be discarded at stations.
+                                        </li>
+                                        <li>Passenger Visiting at Lost and Found Office or station, to claim the
+                                            lost&amp; found items, shall bring a valid government ID having address on
+                                            it.</li>
+                                        <li>If the lost articles are not claimed within six months, deposited articles
+                                            at Lost &amp; Found office will be disposed off.</li>
+                                    </ul>
+                                    <h3>List of Items Founds</h3>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr. No</th>
+                                                <th>Date</th>
+                                                <th>Time</th>
+                                                <th>Station</th>
+                                                <th>Item Found</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>15-07-2022</td>
+                                                <td>15:53 hrs.</td>
+                                                <td>Vastral Gam</td>
+                                                <td>Currency Notes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>20-06-2022</td>
+                                                <td>11:40 hrs.</td>
+                                                <td>Vastral</td>
+                                                <td>Kalash, Cloth,<br>
+                                                    Pooja Aasan &amp;<br>
+                                                    Bhagvad Gita</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>30-05-2022</td>
+                                                <td>11:22 hrs.</td>
+                                                <td>Found in Train</td>
+                                                <td>Yellow Colour Ring</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>27-04-2022</td>
+                                                <td>16:17 hrs.</td>
+                                                <td>Apparel Park</td>
+                                                <td>A Currency Note</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>03-04-2022</td>
+                                                <td>17:50 hrs.</td>
+                                                <td>Apparel Park</td>
+                                                <td>Female wrist watch</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>23-03-2022</td>
+                                                <td>15.44 hrs.</td>
+                                                <td>Vastral Gam</td>
+                                                <td>Ladies Purse</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>28-02-2022</td>
+                                                <td>11.45 hrs.</td>
+                                                <td>Apparel Park</td>
+                                                <td>Sunglasses</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>27-02-2022</td>
+                                                <td>11.57 hrs.</td>
+                                                <td>Apparel Park</td>
+                                                <td>Metal Chain</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer>
         <div class="footer-links">
@@ -1224,7 +1670,7 @@
             }, 1500);
         });
     </script>
-
+    <!-- <script src="assets/js/js1.js"></script> -->
 </body>
 
 </html>
