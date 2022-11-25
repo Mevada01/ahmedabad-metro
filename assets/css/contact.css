@@ -67,8 +67,8 @@ body {
     width: 32%;
 }
 
-.col-40 {
-    width: 40%;
+.col-50 {
+    width: 50%;
 }
 
 .col-60 {
@@ -410,8 +410,6 @@ ul {
 
 
 
-
-
 .menu-rgt-h3 h3 {
     /* margin: 20px 20px; */
     border-bottom: 1px solid #dbd6d6;
@@ -452,7 +450,6 @@ thead th {
 .content-area .cust-care p {
     padding: 20px;
     color: rgba(255, 255, 255, 0.909);
-    ;
     margin-bottom: 10px;
 }
 
@@ -472,3 +469,135 @@ thead th {
 .content-area .bg-clr {
     background-color: #f77802e1;
 }
+
+address{
+    font-style: normal;
+    margin: 0 0 15px;
+}
+
+.col-50 address p {
+    padding: 10px !important;
+    color: rgba(255, 255, 255, 0.909);
+    margin-bottom: 10px;
+}
+.pd-4{
+    padding: 15px 20px;
+}
+ iframe{
+    border-radius: 10px;
+    min-height: 350px;
+    max-width: 534px;
+}
+
+
+
+/* footer start */
+
+footer {
+    background-color: #424141;
+}
+
+.footer-links {
+    padding: 40px 0;
+}
+
+.footer-links h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.footer-links li a {
+    /* display: flex; */
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+
+.footer-links ul li a:hover {
+    opacity: 0.7;
+    color: #f77902;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.footer-links p:hover {
+    color: #f77902;
+}
+
+.footer-links ul li i:hover {
+    color: #f77902;
+}
+
+.footer-links p {
+    display: inline-block;
+    width: 82%;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+/* .reg-office,
+.menu-links,
+.cnt-info {
+    padding: 20px 0;
+} */
+
+.mb {
+    vertical-align: middle;
+    margin: 0 10px 10px 0;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.rgi {
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.reg-office span {
+    display: inline-block;
+    width: 82%;
+    opacity: 0.7;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.reg-office span:hover {
+    color: #f77902;
+}
+
+.reg-office li {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    width: 100%;
+    background: #353434;
+    padding: 25px 0;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.copyright a {
+    color: #f77902;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+
+/* footer end  */
