@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/34b55c0ee8.js" crossorigin="anonymous"></script>
 </head>
 
-<body oncontextmenu="return false" onload="loadweb()"  onpaste="return false;"
+<body oncontextmenu="return false" onload="loadweb()" onselectstart="return false;" onpaste="return false;"
     onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off>
     <div class="containeer lg">
         <div class="navbar">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="hamburger-menu">
                     <div class="bar"></div>
-                 </div>
+                </div>
             </div>
         </div>
 
@@ -90,32 +90,36 @@
                     <h3>About Us</h3>
                     <div class="menu-psg">
                         <ul class="menu-psg-ul">
-                            <li class="tab-links active-link " onclick="opentab('time-table')">
-                                <span><h4>Introduction</h4></span>
+                            <li class="tab-links " onclick="opentab('vis-mis')">
+                                <span>
+                                    <h4>Introduction</h4>
+                                </span>
                             </li>
-                            <li class="tab-links " onclick="opentab('info-eeg')">
-                                <span>>   Our Vision & Mission</span>
+                            <li class="tab-links active-link  " onclick="opentab('vis-mis')">
+                                <span> &#62; Our Vision & Mission</span>
                             </li>
-                            <li class="tab-links " onclick="opentab('customer-care')">
-                                <span>>    Constitution</span>
+                            <li class="tab-links " onclick="opentab('constitution')">
+                                <span> &#62; Constitution</span>
                             </li>
-                            <li class="tab-links " onclick="opentab('smart-card')">
-                                <span><h4>Organization structure</h4></span>
+                            <li class="tab-links " onclick="opentab('pre-board-cmty')">
+                                <span>
+                                    <h4>Organization structure</h4>
+                                </span>
                             </li>
-                            <li class="tab-links " onclick="opentab('smart-card')">
-                                <span>>  Present Board Of Director</span>
+                            <li class="tab-links " onclick="opentab('pre-board-cmty')">
+                                <span> &#62; Present Board Of Director</span>
                             </li>
-                            <li class="tab-links " onclick="opentab('fare-rule')">
-                                <span>>  Borard Level Commmities</span>
+                            <li class="tab-links " onclick="opentab('board-lvl-cmty')">
+                                <span> &#62; Borard Level Commmities</span>
                             </li>
-                            <li class="tab-links " onclick="opentab('safe-security')">
-                                <span> Safety & Security </span>
+                            <!-- <li class="tab-links " onclick="opentab('safe-security')">
+                                <span>Reports </span>
                             </li>
                             <li class="tab-links " onclick="opentab('facility-psg')">
-                                <span> Facilities For Passenger </span>
+                                <span> &#62; Project Reports</span>
                             </li>
                             <li class="tab-links " onclick="opentab('facility-diff-psg')">
-                                <span> Facilities For Differently Abled Passenger </span>
+                                <span> &#62; Accounting Reports </span> -->
                             <!-- <li class="tab-links " onclick="opentab('lost-found')">
                                 <span> Lost & Found </span>
                             </li>
@@ -127,1083 +131,371 @@
                 </div>
                 <div class="col-75">
                     <div class="menu-right">
-                        <div class="menu-tm-tb tab-contents active-tab" id="time-table">
+                        <div class="menu-info-eeg tab-contents active-tab" id="vis-mis">
                             <div class="menu-rgt-h3">
-                                <h3>Time Table</h3>
-                            </div>
-                            <div class="content-area">
-                                <table class="bg-clr">
-                                    <tr>
-                                        <td> some data</td>
-                                        <td>some data</td>
-                                        <td>some data</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="menu-info-eeg tab-contents" id="info-eeg">
-                            <div class="menu-rgt-h3">
-                                <h3>Information of Entry-Exit Gate At Entrance</h3>
+                                <h3>Vision &#38; Mission</h3>
                             </div>
                             <div class="content-area ">
-                                <table cellspacing="0" border="0" class="bg-clr">
-                                    <colgroup width="80"></colgroup>
-                                    <colgroup span="2" width="152"></colgroup>
-                                    <colgroup width="153"></colgroup>
-                                    <colgroup width="424"></colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                height="46" align="center" valign="middle" bgcolor="#FFFFFF"><b>
-                                                    <font>Sr. No </font>
-                                                </b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b>
-                                                    <font>Station Name</font>
-                                                </b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b>
-                                                    <font>Type of Station </font>
-                                                </b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b>
-                                                    <font face="Times New Roman">Operational Entry &amp;
-                                                        Exit</font>
-                                                </b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b>
-                                                    <font face="Arial">Facilities for Divyangjan at Entrance
-                                                    </font>
-                                                </b></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                sdval="1" sdnum="16393;">
-                                                <font face="Times New Roman">1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Vastral Gam</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No .01 Near Gate No.01 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 4</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                sdval="2" sdnum="16393;">
-                                                <font face="Times New Roman">2</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Nirant Cross Road</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp connecting to Lift No. 1 near Gate No. 1 <br>
-                                                </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 4</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="111" align="center" valign="middle"
-                                                bgcolor="#FFFFFF" sdval="3" sdnum="16393;">
-                                                <font face="Times New Roman">3</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Vastral</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp connecting to Lift No. 1 <br>near Gate No. 2
-                                                    and<br>Ramp connecting to Lift No. 2 <br>near Gate No. 3<br></font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                sdval="4" sdnum="16393;">
-                                                <font face="Times New Roman">4</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Rabari Colony</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle">
-                                                <font face="Times New Roman">Ramp connecting Lift No. 2
-                                                    <br>Near Gate No. 3
-                                                </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="52" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                sdval="5" sdnum="16393;">
-                                                <font face="Times New Roman">5</font>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Amraiwadi</font>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp connecting to Lift No. 1 near Gate No. 2 &amp;
-                                                    Ramp Connecting to Lift No.02 Near Gate No.3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                sdval="6" sdnum="16393;">
-                                                <font face="Times New Roman">6</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Apparel Park</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp connecting to Lift No. 1 near Gate No. 1 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                height="40" align="center" valign="bottom" bgcolor="#FFFFFF" sdval="7"
-                                                sdnum="16393;">
-                                                <font>7</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Kalupur Railway Station</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Underground </font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 1 Near Gate No.1 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                height="31" align="center" valign="bottom" bgcolor="#FFFFFF" sdval="8"
-                                                sdnum="16393;">
-                                                <font>8</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gheekanta</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Underground </font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                align="center" valign="bottom" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No.1 Near Gate No. 1</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="9" sdnum="16393;">
-                                                <font>9</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Shahpur</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Underground </font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No.02 Near Gate No. 03 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="61" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="10" sdnum="16393;">
-                                                <font>10</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Old High Court<br>(Interchange
-                                                    Station)</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 8</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting No Lift No.05 Near Gate No. 08 &amp;
-                                                    Ramp Connecting to Lift No. 01 Near Gate No. 01 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="59" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="11" sdnum="16393;">
-                                                <font>11</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">S P Stadium</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 01 near Gate No. 01 &amp;
-                                                    Ramp Connecting to Lift No 02 Near Gate No. 02 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="12" sdnum="16393;">
-                                                <font>12</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Commerce Six Road</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 01 Near Gate No.01 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 5</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="88" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="13" sdnum="16393;">
-                                                <font>13</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gujarat University</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 01 to Gate No. 01 &amp;
-                                                    Ramp Connecting to Lift No.02 Near Gate Number 04 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 4</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="14" sdnum="16393;">
-                                                <font>14</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gurukul Road</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 01 to Gate No. 02 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="40" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="15" sdnum="16393;">
-                                                <font>15</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Doordarshan Kendra</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 1</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 01 to Gate No. 01 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 4</font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" height="41" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                sdval="16" sdnum="16393;">
-                                                <font>16</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Thaltej</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Elevated</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 2</font>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font>Ramp Connecting to Lift No. 01 to Gate No. 02 </font>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
-                                                align="center" valign="middle" bgcolor="#FFFFFF">
-                                                <font face="Times New Roman">Gate No 3</font>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="menu-rgt-h3">
-                                    <h3>Entry Exit Details Of NS Stations</h3>
-                                </div>
-                                <table border="0" cellspacing="0">
-                                    <colgroup width="80"></colgroup>
-                                    <colgroup span="2" width="152"></colgroup>
-                                    <colgroup width="153"></colgroup>
-                                    <colgroup width="424"></colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF" height="46">
-                                                <b><span>Sr. No
-                                                    </span></b>
-                                            </td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b><span>Station
-                                                        Name</span></b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b><span>Type of
-                                                        Station
-                                                    </span></b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b><span
-                                                        style=" font-family: 'Times New Roman';">Operational
-                                                        Entry &amp; Exit</span></b></td>
-                                            <td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><b><span
-                                                        style=" font-family: Arial;">Facilities for
-                                                        Divyangjan at Entrance</span></b></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span style=" font-family: 'Times New Roman';">1</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">APMC</span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 1 Near Gate No. 1
-                                                </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span style=" font-family: 'Times New Roman';">2</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Jivraj
-                                                    Park</span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    2</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No.01 Near Gate No.2<br>
-                                                </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    3</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                height="111">
-                                                <span style=" font-family: 'Times New Roman';">3</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Rajiv Nagar
-                                                    Metro Station </span></td>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 02 Near Gate No.
-                                                    4<br>
-                                                </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Gate No 4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span style=" font-family: 'Times New Roman';">4</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Shreyas</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle"><span
-                                                    style=" font-family: 'Times New Roman';">Ramp Connecting
-                                                    to Lift No. 01 Near Gate No. 1 &amp; Ramp Connecting Lift No. 2 Near
-                                                    Gate No. 04 </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                height="52">
-                                                <span style=" font-family: 'Times New Roman';">5</span>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Paldi</span>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Gate No 2</span>
-                                            </td>
-                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 02 Near Gate
-                                                    No.03</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    3</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span style=" font-family: 'Times New Roman';">6</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Gandhigram Metro
-                                                    Station</span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 01 Near Gate
-                                                    No.01</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    3</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="bottom" bgcolor="#FFFFFF" height="40">
-                                                <span>7</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Usmaanpura
-                                                    Metro
-                                                    Station</span></td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp Connecting
-                                                    to
-                                                    Lift No.01 Near Gate
-                                                    No.01</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                align="center" valign="bottom" bgcolor="#FFFFFF" height="31">
-                                                <span>8</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Vijay
-                                                    Nagar
-                                                    Metro Station </span></td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated
-                                                </span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                align="center" valign="bottom" bgcolor="#FFFFFF"><span>Ramp Connecting
-                                                    to
-                                                    Lift No.01 Near Gate
-                                                    No.01</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span>9</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Vadaj Metro
-                                                    Station</span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    1</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No.01 Near Gate No.01
-                                                </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    4</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                height="61">
-                                                <span>10</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Ranip</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    2</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No.01 Near Gate No.02
-                                                </span></td>
-                                        </tr>
-                                        <tr></tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span>11</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">AEC </span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    2</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 02 Near Gate No.03
-                                                </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    3</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                height="40">
-                                                <span>12</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Sabarmati Metro
-                                                    Station</span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    2</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="middle" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 01 Near Gate No.02
-                                                    &amp; Ramp Connecting to Lift No 02 Near Gate No. 03 </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    3</span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"
-                                                height="88">
-                                                <span>13</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Motera Stadium
-                                                </span></td>
-                                            <td style="border: 1px solid #000000;" rowspan="2" align="center"
-                                                valign="middle" bgcolor="#FFFFFF"><span
-                                                    style=" font-family: 'Times New Roman';">Elevated</span>
-                                            </td>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    2</span>
-                                            </td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000;"
-                                                rowspan="2" align="center" valign="bottom" bgcolor="#FFFFFF"><span>Ramp
-                                                    Connecting to Lift No. 01 Near Gate No.02
-                                                    &amp; Ramp Connecting to Lift No 02 Near Gate No. 03 </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border: 1px solid #000000;" align="center" valign="middle"
-                                                bgcolor="#FFFFFF"><span style=" font-family: 'Times New Roman';">Gate No
-                                                    3</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="menu-cust-care tab-contents" id="customer-care">
-                            <div class="menu-rgt-h3">
-                                <h3>Customer Care</h3>
-                            </div>
-                            <div class="content-area">
-                                <div class="cust-care bg-clr">
-                                    <p>
-                                        GMRC is working hard to meet expectations of Passengers and committed to give
-                                        delightful experience to passengers.
+                                <div class="vi-mi bg-clr">
+                                    <blockquote>
+                                        <p>“To provide safe, fast and eco-friendly rail based mass transit services to
+                                            the public at affordable rates while</p>
+                                        <p>
+                                            simultaneously catalysing dense and orderly urban growth”</p>
+                                    </blockquote>
+                                    <p class="vi-mi-p">Ahmedabad - Gandhinagar Metro rail project is being promoted with
+                                        the objective
+                                        of providing safe, fast and eco-friendly transportation services to the public
+                                        at affordable rates while simultaneously reducing the congestion on the roads.
+                                        The metro rail project will promote integration with AMTS, BRTS, Railways and
+                                        other modes of public transit system.</p>
+                                    <ul class="project-aims">
+                                        <li>Very responsive State Government and progressive leadership</li>
+                                        <li>Relatively flat terrain</li>
+                                        <li>Use of state of the art technology</li>
+                                        <li>Minimum land acquisition</li>
+                                        <li>Majority elevated track</li>
+                                    </ul>
+                                    <p class="vi-mi-p">GMRC is committed to deliver World Class state-of-art
+                                        technology most cost efficient metro
+                                        within the shortest time span possible in the
+                                        country.
                                     </p>
-                                    <p>GMRC has developed a mechanism to resolve Passenger's Grievances. Passenger can
-                                        address their Grievances/Query/Suggestion/Appreciation to Centralized Customer
-                                        Care
-                                        Centre of GMRC by following mode.</p>
-                                    <ol>
-                                        <li>Contact us on Telephone No. :- <a href="tel:+91-79-23248572">
-                                                079-22960123</a></li>
-                                        <li>Writing us on E-Mail:- <a href="mailto:care@gujaratmetrorail.com">
-                                                care@gujaratmetrorail.com</a>
-                                        </li>
-                                        <li>Duly Filled Complaint/Suggestion/Appreciation form by Walk-in at Operational
-                                            Station</li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-dos-dont tab-contents" id="dos-dont">
-                            <div class="menu-rgt-h3">
-                                <h3>Do's & Don't</h3>
-                            </div>
-                            <div class="content-area">
-                                <div class="dos-donts bg-clr">
-                                    <h3>Do's</h3>
-                                    <p></p>
-                                    <ul>
-                                        <li>In case you hear or see something unusual, please inform Metro staff or
-                                            security personnel inside trains or stations. </li>
-                                        <li>Stand in queue while waiting for trains at platform.</li>
-                                        <li>Let passengers exit from the train before boarding</li>
-                                        <li>Never Squat on the train Floor.</li>
-                                        <li>Limit your baggage to 25 Kgs not exceeding 80 cm (Length) x 50 cm (Breadth)
-                                            x 30 cm (Height) in size. Luggage exceeding such weight and/or dimensions
-                                            are not allowed.</li>
-                                        <li>Avoid reading newspaper or crossing legs in crowded train as it leaves less
-                                            space for fellow passengers.</li>
-                                        <li>Abstain from drunken and unruly behaviour.</li>
-                                        <li>Watch the gap between the train and platform edge.</li>
-                                        <li>It is illegal to beg, solicit products or conduct group activities in the
-                                            train and at the station. Please report such activities to the station
-                                            staff.</li>
-                                        <li>Please be sure to take all your belongings with you when you get off the
-                                            train. If you lose something within metro premises, contact GMRC Lost &amp;
-                                            Found Cell. </li>
-                                    </ul>
-                                    <h3>Don't</h3>
-                                    <p></p>
-                                    <ul>
-                                        <li>Do not spit or throw garbage within Metro Premises.</li>
-                                        <li>Do not eat or drink inside trains and paid area of stations.</li>
-                                        <li>Do not bring pets inside Metro Stations.</li>
-                                        <li>Do not smoke inside Metro Premises.</li>
-                                        <li>Do not travel without valid token media.</li>
-                                        <li>Do not jump over the ticket barrier.</li>
-                                        <li>Do not share your ticket media with other person on the same journey.</li>
-                                        <li>Do not step onto the Metro Track. 3rd Rail is charged with 750 V DC.</li>
-                                        <li>Do not try to open the doors forcibly.</li>
-                                        <li>Do not deface or put posters inside Metro station or train.</li>
-                                        <li>Do not run or play games on the escalators.</li>
-                                        <li>Do not lean or put your hands on the train doors.</li>
-                                        <li>Do not rush on platforms or push other passengers to prevent accidents.
-                                        </li>
-                                    </ul>
-                                    <h3>LIST OF ITEMS PROHIBITED WITHIN METRO PREMISES</h3>
-                                    <p></p>
-                                    <ul>
-                                        <li>Petroleum and other inflammable liquids</li>
-                                        <li>Inflammable solids</li>
-                                        <li>Manure of any kind</li>
-                                        <li>Rags, including oily rags</li>
-                                        <li>Oxidising substances</li>
-                                        <li>Poisonous (toxic) substances</li>
-                                        <li>Acids and other corrosives</li>
-                                        <li>Radioactive substances</li>
-                                        <li>Blood, dried</li>
-                                        <li>Corpses</li>
-                                        <li>Bones, excluding bleached and cleaned bones</li>
-                                        <li>Gases, compressed, liquefied, or dissolved under pressure</li>
-                                        <li>Explosive substances, which possess risk of explosion, or fire, or both</li>
-                                        <li>Any decayed animal or vegetable matter</li>
-                                        <li>Human ashes</li>
-                                        <li>Parts of the human body</li>
-                                        <li>Human Skeleton</li>
-                                        <li>Any other article declared as dangerous or offensive material by the metro
-                                            railway administration from time to time</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="menu-smart-card tab-contents" id="smart-card">
-                            <div class="menu-rgt-h3">
-                                <h3>Smart Cards</h3>
-                            </div>
-                            <div class="content-area">
-                                <div class="smart-cards bg-clr">
-                                    <h3>Purchase/Recharge of Samrt Card</h3>
-                                    <ul>
-                                        <li>Passenger can purchase Smart card at any operational stations by Payment of
-                                            Rs. 100/- (Rs. 50/- as Security Deposit and Rs. 50/- as Stored Value)
-                                            through Cash or POS (Debit/Credit Card). Stored Value Can be used for
-                                            travelling in Ahmedabad Metro as per fare chart.</li>
-                                        <li>Passenger can recharge CSC in multiple of Rs. 50/- up to maximum of Rs.
-                                            3000/-</li>
-                                        <li>Passenger can recharge CSC using Token Vending Machine (TVM) and Recharge
-                                            Card Machine (RCM) at Operational Station. </li>
-                                        <li>CSC valid for 5 Years from date of Last Recharge.</li>
-                                    </ul>
-                                    <h3>Use of Smart Card</h3>
-                                    <!-- <br> -->
-                                    <ul>
-                                        <li><strong>Entry-Exit:</strong> Tap Smart Card at Entry Fare Gate to Enter into
-                                            paid area and at Exit Fare Gate to Exit from paid area.</li>
-                                        <li><strong>Sequence:</strong> Each Entry shall be followed by Exit while using
-                                            CSC.</li>
-                                        <li><strong>Mismatch:</strong> If Entry-Exit sequence does not follow. There
-                                            will be Entry-Exit Mismatch Error in CSC. Passenger shall contact Customer
-                                            Care at station to eliminate error.</li>
-                                        <li><strong>Requirement of Minimum Stored Value:</strong> Minimum Stored value
-                                            required to enter is minimum fare of system.</li>
-                                        <li><strong>Fare Deduction:</strong> Fare will be deducted at Exit Fare Gates as
-                                            per journey performed. In case of Entry &amp; Exit at same station, Minimum
-                                            Fare of system will be deducted. </li>
-                                        <li><strong>Facilities to check Stored Value:</strong> Passenger can check
-                                            Stored Value through Recharge Card Machine (RCM) and ENQ Machine.</li>
-                                    </ul>
-                                </div>
-                                <marquee class="blink">
-                                    <p> ** Note: ENQ Machine is currently not available. It will be operational soon. **
+                                    <p class="vi-mi-p">
+                                        The proposed metro will have majorly elevated structure, ballast-less tracks,
+                                        air-conditioned coaches, GPS based rail tracking system, train destination
+                                        indicators & stations with support infrastructure like automated fare
+                                        collection, parking facilities, etc.
                                     </p>
-                                </marquee>
-                                <div class="smart-cards bg-clr">
-                                    <h3>Benefits of Smart Card</h3>
-                                    <ul>
-                                        <li><strong>Save Money!</strong><br>
-                                            Passengers using CSC for travelling will be given 10% discount on completion
-                                            of journey.</li>
-                                        <li><strong>Save Time!</strong><br>
-                                            No need to stand in queue to purchase Token. </li>
-                                        <li><strong>Enjoy Convenience!</strong><br>
-                                            You can catch train at last moment. (Token Vending Counters will be closed
-                                            five minutes before departure of last scheduled train.)</li>
-                                        <li><strong>Great Flexibility!</strong><br>
-                                            Smart card can be used by Friends, Family or relatives as per flexibility.
-                                        </li>
-                                        <li><strong>Freedom!</strong><br>
-                                            Journey can be Extended/Terminated without pre-planning as Fare will be
-                                            deducted at Exit Fare Gates.</li>
-                                    </ul>
-                                    <h3>Refund of Smart Card</h3>
-                                    <!-- <br> -->
-                                    <ul>
-                                        <li>Stored Value amount of CSC will not be refunded in Cash. </li>
-                                        <li>In case of Unreadable CSC, refund of Stored Value will be provided in new
-                                            CSC as per Business Rules of GMRC.</li>
-                                        <li>If passenger wants to refund Readable CSC, only Security Deposit will be
-                                            refunded after deducting admin charges as per Business Rules of GMRC.</li>
-                                        <li>Process for Refund of Stored value of Unreadable CSC in new CSC will take up
-                                            to 7 days.</li>
-                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-cust-care tab-contents" id="constitution">
+                            <div class="menu-rgt-h3">
+                                <h3>Constitution</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="consti bg-clr">
+                                    <blockquote>
+                                        <p>Gujarat Metro Rail Corporation (GMRC) Limited [formerly known as Metro-Link
+                                            Express for <br>
+                                            Gandhinagar (MEGA) Company Limited] was incorporated on 04 th February, 2010
+                                            under the <br>
+                                            Companies Act, 10956 as a Special Purpose Vehicle by Government of Gujarat
+                                            for the purpose <br>
+                                            of implementation of Metro Rail Projects. <br>
+                                            The company was restructured with effect from 20 th March 2015 and has been
+                                            converted as a <br>
+                                            50: 50 SPV of Government of India and Government of Gujarat.
+                                        </p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-dos-dont tab-contents" id="pre-board-cmty">
+                            <div class="menu-rgt-h3">
+                                <h3>Present Board of Directors</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class=" bg-clr">
+                                    <table class="table table-bordered table-striped directors">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr No.</th>
+                                                <th>Name</th>
+                                                <th>Designation</th>
+                                                <th>Nominated By</th>
+                                                <th>Photograph</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Manoj Joshi, IAS</p>
+                                                    <p>Secretary,<br>
+                                                        Ministry of Housing &amp; Urban Affairs,<br>
+                                                        Government of India.</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Chairman</h3>
+                                                </td>
+                                                <td>Government of India</td>
+                                                <td><img class="img-responsive" alt="Shri Manoj Joshi, IAS"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Shri-Manoj-Joshi-IAS-Chairman.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Shyam Sunder Dubey</p>
+                                                    <p>Joint Secretary &amp; Financial Advisor<br>
+                                                        Ministry of Housing &amp; Urban Affairs<br>
+                                                        Government of India</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of India</td>
+                                                <td><img class="img-responsive" alt="Shri Shyam Sunder Dubey"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/shyam-dubey-photo.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Jaideep</p>
+                                                    <p>OSD(UT)<br>
+                                                        Ministry of Housing &amp; Urban Affairs<br>
+                                                        Government of India</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of India</td>
+                                                <td><img class="img-responsive" alt="Shri Jaideep"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2018/05/osd-pic.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Sanjay Gupta</p>
+                                                    <p style="margin: 0cm;">Chief Project Manager, Ahmedabad Division
+                                                        (WR),</p>
+                                                    <p style="margin: 0cm;">Ministry of Railways, GoI</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of India</td>
+                                                <td><img class="img-responsive" alt="Shri Sanjay Gupta"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/12/Photo-of-Shri-Sanjay-Gupta.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Thiruman Archunan</p>
+                                                    <p>Director (Projects)<br>
+                                                        Chennai Metro Rail Limited</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of India</td>
+                                                <td><img class="img-responsive" alt="Shri Thiruman Archunan"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/12/Shri-Thiruman-Archunan-Nominee-Director-GoI.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Jagdish Prasad Gupta, IAS</p>
+                                                    <p>Principal Secretary, Finance Department<br>
+                                                        Government of Gujarat</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of Gujarat</td>
+                                                <td><img class="img-responsive" alt="Shri Jagdish Prasad Gupta, IAS"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/01/Shri-Jagdish-Prasad-Gupta-IAS-Photo.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Mukesh Kumar, IAS</p>
+                                                    <p>Principal Secretary,<br>
+                                                        Urban Development &amp; Urban Housing Department
+                                                        (UD&amp;UHD),<br>
+                                                        Government of Gujarat.</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of Gujarat</td>
+                                                <td><img class="img-responsive" alt="Shri Mukesh Kumar, IAS"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2022/03/Shri-Mukesh-Kumar-IAS.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Smt. Sunaina Tomar, IAS</p>
+                                                    <p style="margin: 0cm;">Additional Chief Secretary,</p>
+                                                    <p style="margin: 0cm;">Social Justice and Empowerment
+                                                        Department,<br>
+                                                        Government of Gujarat.</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director</h3>
+                                                </td>
+                                                <td>Government of Gujarat</td>
+                                                <td><img class="img-responsive" alt="Smt. Sunaina Tomar, IAS"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2022/03/Smt.-Sunaina-Tomar-IAS-Photo.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri S. S. Rathore</p>
+                                                    <p>Full Time Managing Director,<br>
+                                                        GMRC Limited.</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Managing Director</h3>
+                                                </td>
+                                                <td>Government of Gujarat</td>
+                                                <td><img class="img-responsive" alt="Shri S. S. Rathore"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/07/SSR-photo.jpg">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Jaydeep Shah, IA&amp;AS</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director (Finance)</h3>
+                                                </td>
+                                                <td>Functional Director</td>
+                                                <td><img class="img-responsive" alt="Shri Jaydeep Shah, IA&amp;AS"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2022/02/Shri-Jaydeep-Shah-WTD-Finance-Photo.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Sahadeva Singh</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director<br>(Project &amp; Planning)</h3>
+                                                </td>
+                                                <td>Functional Director</td>
+                                                <td><img class="img-responsive" alt="Shri Sahadeva Singh"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2016/02/DPP-Sir-Photo.png">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td class="text-left">
+                                                    <p class="darkText">Shri Prashant Rao</p>
+                                                </td>
+                                                <td class="text-left">
+                                                    <h3 class="designation">Director (System, Electrical &amp; Rolling
+                                                        Stock)</h3>
+                                                </td>
+                                                <td>Functional Director</td>
+                                                <td><img class="img-responsive" alt="Shri Prashant Rao"
+                                                        src="https://www.gujaratmetrorail.com/wp-content/uploads/2018/05/Dir-SER-Photo.jpg">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-smart-card tab-contents" id="board-lvl-cmty">
+                            <div class="menu-rgt-h3">
+                                <h3>Board Level Commmities</h3>
+                            </div>
+                            <div class="content-area">
+                                <div class="brd-lvl-cmty bg-clr">
+                                    <h3>AUDIT COMMITTEE MEMBERS</h3>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr No.</th>
+                                                <th>Name of Members</th>
+                                                <th>Designation</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center">SHRI JAGDISH PRASAD GUPTA, IAS</td>
+                                                <td class="text-center">CHAIRMAN</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td class="text-center">SMT. SUNAINA TOMAR, IAS</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td class="text-center">SHRI JAIDEEP, OSD (UT)</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">4</td>
+                                                <td class="text-center">SHRI SANJAY GUPTA, CPM, WR, MOR</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>&nbsp;</p>
+                                    <h3>NOMINATION AND REMUNERATION COMMITTEE MEMBERS</h3>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr No.</th>
+                                                <th>Name of Members</th>
+                                                <th>Designation</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center">SHRI JAIDEEP, OSD (UT)</td>
+                                                <td class="text-center">CHAIRMAN</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td class="text-center">SMT. SUNAINA TOMAR, IAS</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td class="text-center">SHRI SANJAY GUPTA, CPM, WR, MOR</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">4</td>
+                                                <td class="text-center">SMT. AVANTIKA SINGH AULAKAH, IAS</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>&nbsp;</p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr No.</th>
+                                                <th>Name of Members</th>
+                                                <th>Designation</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center">SHRI JAGDISH PRASAD GUPTA, IAS</td>
+                                                <td class="text-center">CHAIRMAN</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">2</td>
+                                                <td class="text-center">SHRI JAIDEEP, OSD (UT)</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">3</td>
+                                                <td class="text-center">SHRI S. S. RATHORE</td>
+                                                <td class="text-center">MEMBER</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -1586,6 +878,58 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-33">
+                        <h3>Quick Links</h3>
+                        <div class="menu-links">
+                            <ul>
+                                <li><a href=""> > Tenders</a></li>
+                                <li><a href=""> > Contact us</a></li>
+                                <li><a href=""> > Careers</a></li>
+                                <li><a href=""> > Feedback</a></li>
+                                <li><a href=""> > Discclaimer</a></li>
+                                <li><a href=""> > Refund & Cancellation</a></li>
+                                <li><a href=""> > Privacy Policy</a></li>
+                                <li><a href=""> > Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <div class="cnt-info">
+                            <h3>Contact Information</h3>
+                            <p>Gujarat Metro Rail Corporation (GMRC) Limited (SPV of Government of India and Government
+                                of
+                                Gujarat)</p>
+                            <p>CIN NO. U60200GJ2010SGC059407</p>
+                        </div>
+                    </div>
+                    <div class="col-33">
+                        <h3>Registered Offfice</h3>
+                        <ul class="reg-office">
+                            <li><a href="https://maps.app.goo.gl/ER4eqn4HkarzBqB49" target="_blank">
+                                    <i class="fa-solid fa-location-dot mb"></i>
+                                    <span>Block No.1, First Floor, Karmayogi Bhavan, Sector 10/A,
+                                        Gandhinagar-382010.</span>
+                                </a>
+                            </li>
+                            <li><a href="tel:+91-79-23248572"> <i class="fa-solid fa-phone rgi"></i> +91-79-23248572</a>
+                            </li>
+                            <li><a href="mailto:info@gujaratmetrorail.com"><i
+                                        class="fa-solid fa-envelope rgi"></i>info@gujaratmetrorail.com </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>web Desiging and Developed by <a href="https://mevada01.github.io/personal-portfolio/" target="_blank">
+                    HM The Company of I.T.</a></p>
+            <p>Copyright ©️ 2016 GMRC. All Rights Reserved. <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </footer>
     <script>
         const hamburger_menu = document.querySelector(".hamburger-menu");
         const container = document.querySelector(".lg");

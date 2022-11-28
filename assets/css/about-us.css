@@ -536,6 +536,8 @@ thead th {
 
 .content-area .bg-clr {
     background-color: #f77802e1;
+    /* margin: 20px 0; */
+    padding: 20px 0;
 }
 
 .content-area .smart-cards h3 {
@@ -652,6 +654,91 @@ thead th {
 
 
 
+.content-area blockquote {
+    background: #eeeeee;
+    padding: 15px 20px;
+    margin: 0 0 30px;
+    font-size: 1.000em;
+    line-height: 1.625em;
+    border-left: 8px solid #353434;
+    color: #333333;
+    font-style: italic;
+    font-weight: 300;
+    display: inline-block;
+    width: 100%;
+}
+
+.content-area blockquote p {
+    font-size: 14px;
+}
+
+.content-area .vi-mi-p {
+    margin: 15px 0;
+    padding: 0 20px;
+    color: lavenderblush;
+}
+
+.content-area .project-aims {
+    padding: 0;
+    list-style: disc;
+    margin: 15px 10px 30px;
+}
+
+.content-area .project-aims ::marker {
+    color: #333333;
+}
+
+.content-area .project-aims li {
+    position: relative;
+    /* padding: 2px 0 2px 30px; */
+    color: lavender;
+    margin: 8px 20px;
+}
+
+.directors img {
+    max-width: 120px;
+    display: inline-block;
+}
+
+.directors h3 {
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.909);
+    border-bottom: none !important;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.directors table,
+thead,
+th,
+tr,
+td {
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #f7a00263;
+}
+
+.brd-lvl-cmty h3 {
+
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.909);
+    border-bottom: none !important;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -673,6 +760,11 @@ thead th {
     left: 0;
     bottom: -6px;
     transition: 0.5s ease;
+}
+.active-link {
+    color: #fff;
+    /* list-style: none; */
+    background-color: #646464;
 }
 
 .tab-links.active-link::after {
