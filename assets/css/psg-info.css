@@ -619,7 +619,8 @@ thead th {
     border-bottom: 1px solid #dbd6d6;
     font-weight: 500;
 }
-.content-area address{
+
+.content-area address {
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -627,7 +628,8 @@ thead th {
     line-height: 1.42857143;
     color: rgba(255, 255, 255, 0.909);
 }
-.content-area .lnf a{
+
+.content-area .lnf a {
     color: #646464;
 }
 
@@ -665,6 +667,12 @@ thead th {
     left: 0;
     bottom: -6px;
     transition: 0.5s ease;
+}
+
+.active-link {
+    color: #fff;
+    /* list-style: none; */
+    background-color: #646464;
 }
 
 .tab-links.active-link::after {
